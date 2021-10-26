@@ -1,8 +1,8 @@
 /*!
-* Start Bootstrap - Agency v7.0.10 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
+ * Start Bootstrap - Agency v7.0.10 (https://startbootstrap.com/theme/agency)
+ * Copyright 2013-2021 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
+ */
 //
 // Scripts
 // 
@@ -10,7 +10,7 @@
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
-    var navbarShrink = function () {
+    var navbarShrink = function() {
         const navbarCollapsible = document.body.querySelector('#mainNav');
         if (!navbarCollapsible) {
             return;
@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', event => {
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
     );
-    responsiveNavItems.map(function (responsiveNavItem) {
+    responsiveNavItems.map(function(responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
@@ -58,52 +58,53 @@ let lang = 'sp';
 setLangStyles(lang);
 
 function setStyles(styles) {
-  var elementId = '__lang_styles';
-  var element = document.getElementById(elementId);
-  if (element) {
-    element.remove();
-  }
+    var elementId = '__lang_styles';
+    var element = document.getElementById(elementId);
+    if (element) {
+        element.remove();
+    }
 
-  let style = document.createElement('style');
-  style.id = elementId;
-  style.type = 'text/css';
+    let style = document.createElement('style');
+    style.id = elementId;
+    style.type = 'text/css';
 
-  if (style.styleSheet) {
-    style.styleSheet.cssText = styles;
-  } else {
-    style.appendChild(document.createTextNode(styles));
-  }
-  document.getElementsByTagName('head')[0].appendChild(style);
+    if (style.styleSheet) {
+        style.styleSheet.cssText = styles;
+    } else {
+        style.appendChild(document.createTextNode(styles));
+    }
+    document.getElementsByTagName('head')[0].appendChild(style);
 }
 
 function setLang(lang) {
-  setLangStyles(lang);
-  ChangeColor(lang);
-  console.log("Done");
+    setLangStyles(lang);
+    ChangeColor(lang);
+    console.log("Done");
 }
-function ChangeColor(lang){
-    if(lang === 'sp'){
+
+function ChangeColor(lang) {
+    if (lang === 'sp') {
         document.getElementById('sp').style.color = "#aa9edd";
         document.getElementById('eng').style.color = "#1a2a3a";
-    } else{
+    } else {
         document.getElementById('sp').style.color = "#1a2a3a";
-        document.getElementById('eng').style.color = "#aa9edd"; 
+        document.getElementById('eng').style.color = "#aa9edd";
     }
 }
 
 function setLangStyles(lang) {
-  let styles = langs
-    .filter(function (l) {
-      return l != lang;
-    })
-    .map(function (l) {
-      return ':lang('+ l +') { display: none; }';
-    })
-    .join(' ');
+    let styles = langs
+        .filter(function(l) {
+            return l != lang;
+        })
+        .map(function(l) {
+            return ':lang(' + l + ') { display: none; }';
+        })
+        .join(' ');
 
-  setStyles(styles);
+    setStyles(styles);
 }
 
-window.onload = function(){
+window.onload = function() {
     ChangeColor("sp");
 }
