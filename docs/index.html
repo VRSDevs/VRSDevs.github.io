@@ -21,13 +21,14 @@
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="#page-top"><img src="assets/img/virtualravens.svg" alt="VRS name" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <i class="fas fa-bars ms-1"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#nosotros">
                             <span lang='sp'>Nosotros</span>
@@ -47,10 +48,22 @@
                     <li class="nav-item"><a class="nav-link" href="#contact">
                             <span lang='sp'>Contacto</span>
                             <span lang='eng'>Contact</span></a></li>
-                    <li class="nav-item"><a class="nav-link" id="sp" href="" hreflang="sp"
-                            onclick="setLang('sp'); return false">Español</a></li>
-                    <li class="nav-item"><a class="nav-link" id="eng" href="" hreflang="eng"
-                            onclick="setLang('eng'); return false">English</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span lang='sp'>Idioma</span>
+                            <span lang='eng'>Language</span>
+                        </a>
+                        <!-- Here's the magic. Add the .animate and .slideIn classes to your .dropdown-menu and you're all set! -->
+                        <div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" id="sp" href="" hreflang="sp"
+                                onclick="setLang('sp'); return false">Español</a>
+                            <a class="dropdown-item" id="eng" href="" hreflang="eng"
+                                onclick="setLang('eng'); return false">English</a>
+
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -161,7 +174,7 @@
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <!-- Looping Crystal-->
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioLast">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
@@ -539,7 +552,7 @@
         </div>
     </footer>
     <!-- Portfolio Modals-->
-    <!-- Portfolio item 1 modal popup-->
+    <!-- CURRENT PROJECT-->
     <div class="portfolio-modal modal fade" id="portfolioCurrent" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -560,15 +573,35 @@
                                 </p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/XORivals/banner.jpg"
                                     alt="XO Rivals Banner" />
-                                <p><span lang='sp'>XO Rivals es un juego para web basado en el tradicional Tic Tac Toe,
-                                        presentando la innovación de que,
-                                        para poder colocar ficha, se debe ganar un minijuego previamente seleccionado.
-                                        Con esta idea se busca proporcionar un unattended multiplayer para que los
-                                        jugadores no tengan que prestar
-                                        atención constante a la conexión del enemigo.</span>
-                                    <span lang='eng'>XO Rivals</span>
-                                </p>
+
                                 <ul class="list-inline">
+                                    <li>
+                                        <strong>
+                                            <span lang='sp'>Sinopsis:</span>
+                                            <span lang='eng'>Synopsis:</span>
+                                        </strong>
+                                        <span lang='sp'>XO Rivals es un juego para web basado en el tradicional Tic Tac
+                                            Toe,
+                                            presentando la innovación de que,
+                                            para poder colocar ficha, se debe ganar un minijuego previamente
+                                            seleccionado.
+                                            Con esta idea se busca proporcionar un unattended multiplayer para que los
+                                            jugadores no tengan que prestar
+                                            atención constante a la conexión del enemigo.</span>
+                                        <span lang='eng'>XO Rivals is a web browser videogame based on the traditional
+                                            Tic-Tac-Toe game. The main innovation to the formula
+                                            is that to mark one of the spaces, the player will have to win on a minigame
+                                            that will be selected previously.
+                                            With this idea we look to produce an unattended multiplayer style so that
+                                            the players do not have to pay constant attention
+                                            to the game and the rival. </span>
+                                        <div class="col-md-12">
+                                            <span class="fa-stack fa-4x">
+                                                <i class="far fa-window-minimize"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+
                                     <li>
                                         <strong>
                                             <span lang='sp'>Objetivo:</span>
@@ -580,22 +613,31 @@
                                             colocar la ficha, eligiendo el que beneficie al jugador, o incluso, intentar
                                             hacer que el rival no pueda colocar su ficha eligiendo un minijuego
                                             difícil.</span>
-                                        <span lang='eng'>XO Rivals</span>
+                                        <span lang='eng'>The final objective will be to mark three spaces in a row
+                                            before the rival does. To do this, like it was mentioned before, the players
+                                            will have to
+                                            complete the minigames correcly before marking the space. The participants
+                                            can choose the one that benefits themselves the most or even try to
+                                            choose a difficult so that the rival player cannot mark their space.</span>
                                     </li>
                                 </ul>
                                 <h2 class="text-uppercase"> ⠀
                                     <strong>
                                         <span lang='sp'>Juega aquí:</span>
                                         <span lang='eng'>Play here:</span>
-                                    </strong>⠀⠀⠀
-                                    <a href="https://vrsdevs.itch.io/xo-rivals" target="_blank"><span class="fa-stack fa-4x">
-                                        <i class="fas fa-play-circle"></i>
-                                    </span>⠀</a>
+                                    </strong>
+                                    <button class="btn">
+                                        <a href="https://vrsdevs.itch.io/xo-rivals" target="_blank">
+                                            <span class="fa-stack fa-4x">
+                                                <i class="fas fa-play-circle"></i>
+                                            </span>⠀
+                                        </a>
+                                    </button>⠀⠀⠀
                                 </h2>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-times me-1"></i>
-                                    Close Project
+                                    Close
                                 </button>
                             </div>
                         </div>
@@ -604,8 +646,8 @@
             </div>
         </div>
     </div>
-    <!-- Portfolio item 2 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- LAST PROJECT-->
+    <div class="portfolio-modal modal fade" id="portfolioLast" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
@@ -615,27 +657,113 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
+                                <h2 class="text-uppercase">
+                                    <span lang='sp'>Looping Crystal</span>
+                                    <span lang='eng'>Looping Crystal</span>
+                                </h2>
+                                <p class="item-intro text-muted">
+                                    <span lang='sp'>Juego de plataformas</span>
+                                    <span lang='eng'>Platform game</span>
+                                </p>
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="assets/img/portfolio/LoopingCrystal/intro.png" alt="intro"
+                                                style="width:100%;">
+                                        </div>
+                                        <div class="item">
+                                            <img src="assets/img/portfolio/LoopingCrystal/menu.png" alt="Menu"
+                                                style="width:100%;">
+                                        </div>
+                                        <div class="item">
+                                            <img src="assets/img/portfolio/LoopingCrystal/Pause.png" alt="Pause"
+                                                style="width:100%;">
+                                        </div>
+                                        <div class="item">
+                                            <img src="assets/img/portfolio/LoopingCrystal/preview.png" alt="Preview"
+                                                style="width:100%;">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">
+                                            <span lang='sp'>Previa</span>
+                                            <span lang='eng'>Previous</span>
+                                        </span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">
+                                                <span lang='sp'>Siguiente</span>
+                                                <span lang='eng'>Next</span>
+                                        </span>
+                                    </a>
+                                </div>
                                 <ul class="list-inline">
                                     <li>
-                                        <strong>Client:</strong>
-                                        Explore
+                                        <strong>
+                                            <span lang='sp'>Sinopsis:</span>
+                                            <span lang='eng'>Synopsis:</span>
+                                        </strong>
+                                        <span lang='sp'>Nea es una joven exploradora que decidió entrar en una cueva sin
+                                            saber los misterios que se escondían dentro de ella.
+                                            Gracias a la magia que hay en la cueva, deberás sacar a Nea de allí y
+                                            resolver
+                                            el misterio.
+                                        </span>
+                                        <span lang='eng'>Nea, a young explorer goes into a mysterious cave, without
+                                            knowing
+                                            what mysteries are
+                                            hidden in it. Due to a magic coming from the cave , you must help to get out
+                                            of
+                                            there and solve the mystery.</span>
+                                        <div class="col-md-12">
+                                            <span class="fa-stack fa-4x">
+                                                <i class="far fa-window-minimize"></i>
+                                            </span>
+                                        </div>
                                     </li>
                                     <li>
-                                        <strong>Category:</strong>
-                                        Graphic Design
+                                        <strong>
+                                            <span lang='sp'>Objetivo:</span>
+                                            <span lang='eng'>Objetive:</span>
+                                        </strong>
+                                        <span lang='sp'>El objetivo será ayudar a Nea a salir de la cueva desbloqueando
+                                            las distintas mecánicas del juego. Además, hay 4 coleccionables
+                                            que puedes conseguir jugando.
+                                        </span>
+                                        <span lang='eng'>Your objective is helping Nea to find a way out from the creepy
+                                            cave by unlocking some mechanics during the gameplay.
+                                            Moreover, there are 4 collectionables that you can pick them up.</span>
                                     </li>
                                 </ul>
+                                <h2 class="text-uppercase"> ⠀
+                                    <strong>
+                                        <span lang='sp'>Juega aquí:</span>
+                                        <span lang='eng'>Play here:</span>
+                                    </strong>⠀⠀⠀
+                                    <button class="btn">
+                                        <a href="https://blinx24.itch.io/looping-crystal" target="_blank">
+                                            <span class="fa-stack fa-4x">
+                                                <i class="fas fa-play-circle"></i>
+                                            </span>⠀
+                                        </a>
+                                    </button>
+                                </h2>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-times me-1"></i>
-                                    Close Project
+                                    Close
                                 </button>
                             </div>
                         </div>
@@ -644,7 +772,7 @@
             </div>
         </div>
     </div>
-    <!-- Portfolio item 3 modal popup-->
+    <!-- PROJECT 1-->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -655,27 +783,72 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
+                                <h2 class="text-uppercase">
+                                    <span lang='sp'>Looping Crystal</span>
+                                    <span lang='eng'>Looping Crystal</span>
+                                </h2>
+                                <p class="item-intro text-muted">
+                                    <span lang='sp'>Juego de plataformas</span>
+                                    <span lang='eng'>Platform game</span>
+                                </p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/XORivals/banner.jpg"
+                                    alt="XO Rivals Banner" />
+
                                 <ul class="list-inline">
                                     <li>
-                                        <strong>Client:</strong>
-                                        Finish
+                                        <strong>
+                                            <span lang='sp'>Sinopsis:</span>
+                                            <span lang='eng'>Synopsis:</span>
+                                        </strong>
+                                        <span lang='sp'>Nea es una joven exploradora que decidió entrar en una cueva sin
+                                            saber los misterios que se escondían dentro de ella.
+                                            Gracias a la magia que hay en la cueva, deberás sacar a Nea de allí y
+                                            resolver
+                                            el misterio.
+                                        </span>
+                                        <span lang='eng'>Nea, a young explorer goes into a mysterious cave, without
+                                            knowing
+                                            what mysteries are
+                                            hidden in it. Due to a magic coming from the cave , you must help to get out
+                                            of
+                                            there and solve the mystery.</span>
+                                        <div class="col-md-12">
+                                            <span class="fa-stack fa-4x">
+                                                <i class="far fa-window-minimize"></i>
+                                            </span>
+                                        </div>
                                     </li>
                                     <li>
-                                        <strong>Category:</strong>
-                                        Identity
+                                        <strong>
+                                            <span lang='sp'>Objetivo:</span>
+                                            <span lang='eng'>Objetive:</span>
+                                        </strong>
+                                        <span lang='sp'>El objetivo será ayudar a Nea a salir de la cueva desbloqueando
+                                            las distintas mecánicas del juego. Además, hay 4 coleccionables
+                                            que puedes conseguir jugando.
+                                        </span>
+                                        <span lang='eng'>Your objective is helping Nea to find a way out from the creepy
+                                            cave by unlocking some mechanics during the gameplay.
+                                            Moreover, there are 4 collectionables that you can pick them up.</span>
                                     </li>
                                 </ul>
+                                <h2 class="text-uppercase"> ⠀
+                                    <strong>
+                                        <span lang='sp'>Juega aquí:</span>
+                                        <span lang='eng'>Play here:</span>
+                                    </strong>⠀⠀⠀
+                                    <button class="btn">
+                                        <a href="https://blinx24.itch.io/looping-crystal" target="_blank">
+                                            <span class="fa-stack fa-4x">
+                                                <i class="fas fa-play-circle"></i>
+                                            </span>⠀
+                                        </a>
+                                    </button>
+                                </h2>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-times me-1"></i>
-                                    Close Project
+                                    Close
                                 </button>
                             </div>
                         </div>
