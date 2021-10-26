@@ -21,8 +21,8 @@
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top"><img src="assets/img/virtualravens.svg" alt="Home" /></a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#page-top"><img src="assets/img/virtualravens.svg" alt="VRS name" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars ms-1"></i>
@@ -37,6 +37,9 @@
                             <span lang='sp'>Proyectos</span>
                             <span lang='eng'>Projects</span>
                         </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#collaborator">
+                            <span lang='sp'>Colaboradores</span>
+                            <span lang='eng'>Collaborators</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="#team">
                             <span lang='sp'>Equipo</span>
                             <span lang='eng'>Team</span>
@@ -52,10 +55,11 @@
             </div>
         </div>
     </nav>
+
     <!-- Masthead-->
     <header class="masthead">
         <div class="container">
-            <img class="img-fluid rounded-circle mb-4" src="/assets/img/logoVRS_s.png" alt="..." />
+            <img class="img-fluid rounded-circle mb-2" src="/assets/img/logoVRS_s.png" alt="..." />
             <div class="masthead-subheading"><span lang='sp'>Bienvenido a la página de Virtual Ravens Games</span><span
                     lang='eng'>Welcome to the Virtual Ravens Games page</span></div>
             <div class="masthead-heading text-uppercase"><span lang='sp'>¡Es un placer conocerte!</span> <span
@@ -77,7 +81,7 @@
                         nuestro trabajo. Hemos creado algunos títulos como <i>Origins</i> o <i>Looping Crystal</i>.
                         En esta página puedes echar un ojo a los proyectos que más te gusten.</span>
                     <span lang='eng'>We are a small team of <b>game developers</b> and we love our work. We have created
-                        some titles like <i>Origins</i> o <i>Looping Crystal</i> On this web, you can take a look of
+                        some titles like <i>Origins</i> or <i>Looping Crystal</i>. On this web, you can take a look of
                         some projects that you like the most</span>
 
                 </p>
@@ -96,14 +100,20 @@
                     <span lang='sp'>Durante la Universidad, empezamos algunos de nosotros a crear pequeños proyectos
                         bajo el nombre de <i>Armoony's</i>. Después del desarrollo
                         de <i>Origins</i>, descubrimos que funcionábamos mejor como equipo de lo que creíamos. Nos
-                        apuntamos a <i>GameJams</i> y, gracias a la primera en la que participamos,
+                        apuntamos a <i>Game Jams</i> y, gracias a la primera en la que participamos,
                         surgió el equipo que conocemos hoy; <b>Virtual Ravens Games o VRS</b>. Poco a poco se han ido
                         sumando desarrolladores al equipo para desarrollar nuevos proyectos y
                         esperamos poder dar mucho más de nosotros para crear lo que más nos gusta: los videojuegos.
                     </span>
-                    <span lang='eng'>During the University time, some of us started to create small projects under
-                        <i>Armoony's</i> name</span>
-
+                    <span lang='eng'>During college, some of us started to develop small projects under the moniker of
+                        <i>Armoony's</i>.
+                        After the development of <i>Origins</i>, we learned that we worked much better as a team than
+                        what we originally expected.
+                        We decided to take part on some <i>Game Jams</i> and thanks to the first one we participated in,
+                        the team that we know today was finaly formed: <b>Virtual Ravens Games or VRS</b>.
+                        Little by little, more developers have joined the team to create new projects. We hope we can
+                        give our 120% to create what we love the most: videogames.
+                    </span>
                 </p>
             </div>
             <div class="row text-center">
@@ -118,6 +128,7 @@
     </section>
     <!-- Portfolio Grid-->
     <section class="page-section bg-light" id="portfolio">
+        <!-- Virtual Ravens -->
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">
@@ -127,13 +138,13 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Portfolio item 1-->
+                    <!-- Current project-->
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioCurrent">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/XORivals-01.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/XORivals-01.jpg" alt="XORivals" />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">
@@ -142,52 +153,56 @@
                             </div>
                             <div class="portfolio-caption-subheading text-muted">
                                 <span lang='sp'>Proyecto Actual</span>
-                                <span lang='eng'>Currect Project</span>
+                                <span lang='eng'>Current Project</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Portfolio item 2-->
+                    <!-- Looping Crystal-->
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/loopingCrystal-01.jpg"
+                                alt="loopingCrystal" />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Explore</div>
-                            <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+                            <div class="portfolio-caption-heading">
+                                <span lang='sp'>Looping Crystal</span>
+                                <span lang='eng'>Looping Crystal</span>
+                            </div>
+                            <div class="portfolio-caption-subheading text-muted">
+                                <span lang='sp'>Último proyecto</span>
+                                <span lang='eng'>Last project</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Portfolio item 3-->
+                    <!-- Origins-->
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/Origins-01.jpg" alt="origins" />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Finish</div>
-                            <div class="portfolio-caption-subheading text-muted">Identity</div>
+                            <div class="portfolio-caption-heading">
+                                <span lang='sp'>Origins</span>
+                                <span lang='eng'>Origins</span>
+                            </div>
+                            <div class="portfolio-caption-subheading text-muted">
+                                ⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-            <div class="container">
-                <div class="text">
-                    <h3 class="section-heading text-uppercase">
-                        <span lang='sp'>ReRoc Games</span>
-                        <span lang='eng'>ReRoc Games</span>
-                    </h3>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <!-- Portfolio item 4-->
+
+                <!-- <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Portfolio item 4--7>
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                             <div class="portfolio-hover">
@@ -202,7 +217,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                    <!-- Portfolio item 5-->
+                    <!-- Portfolio item 5--7>
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                             <div class="portfolio-hover">
@@ -217,7 +232,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <!-- Portfolio item 6-->
+                    <!-- Portfolio item 6--7>
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                             <div class="portfolio-hover">
@@ -230,91 +245,137 @@
                             <div class="portfolio-caption-subheading text-muted">Photography</div>
                         </div>
                     </div>
+                </div> -->
+            </div>
+        </div>
+
+    </section>
+    <!-- Collaborators-->
+    <section class="page-section" id="collaborator">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">
+                    <span lang='sp'>Colaboradores</span>
+                    <span lang='eng'>Collaborators</span>
+                </h2>
+                <h3 class="section-subheading text-muted">
+                    <span lang='sp'>Proyectos de los pequeños grupos de desarrollo</span>
+                    <span lang='eng'>Small development team projects</span>
+                </h3>
+            </div>
+            <div class="row">
+                <!-- ReRoc Games -->
+                <h3 class="text-uppercase">
+                    <span lang='sp'>ReRoc Games</span>
+                    <span lang='eng'>ReRoc Games</span>
+                </h3>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- ReRoc Games -->
+                    <div class="collaborator-item">
+                        <a class="collaborator-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <div class="collaborator-hover">
+                                <div class="collaborator-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/ReRocGames-01.jpg" alt="rerocGames" />
+                        </a>
+                        <div class="collaborator-caption">
+                            <div class="collaborator-caption-heading">
+                                <span lang='sp'>¿Quién somos?</span>
+                                <span lang='eng'>Who are we?</span>
+                            </div>
+                            <div class="collaborator-caption-subheading text-muted">
+                                ⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Frikizz-->
+                    <div class="collaborator-item">
+                        <a class="collaborator-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <div class="collaborator-hover">
+                                <div class="collaborator-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/frikizz-01.jpg" alt="frikizz" />
+                        </a>
+                        <div class="collaborator-caption">
+                            <div class="collaborator-caption-heading">
+                                <span lang='sp'>Frikizz</span>
+                                <span lang='eng'>Frikizz</span>
+                            </div>
+                            <div class="collaborator-caption-subheading text-muted">
+                                ⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Escape-->
+                    <div class="collaborator-item">
+                        <a class="collaborator-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <div class="collaborator-hover">
+                                <div class="collaborator-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/Escape!-01.jpg" alt="escape!" />
+                        </a>
+                        <div class="collaborator-caption">
+                            <div class="collaborator-caption-heading">
+                                <span lang='sp'>Escape!</span>
+                                <span lang='eng'>Escape!</span>
+                            </div>
+                            <div class="collaborator-caption-subheading text-muted">
+                                ⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-uppercase">
+                    <span lang='sp'>MrWojack</span>
+                    <span lang='eng'>MrWojack</span>
+                </h3>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- MrWojack-->
+                    <div class="collaborator-item">
+                        <a class="collaborator-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <div class="collaborator-hover">
+                                <div class="collaborator-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/MrWojack-01.jpg" alt="MrWojack" />
+                        </a>
+                        <div class="collaborator-caption">
+                            <div class="collaborator-caption-heading">
+                                <span lang='sp'>¿Quién somos?</span>
+                                <span lang='eng'>Who are we?</span>
+                            </div>
+                            <div class="collaborator-caption-subheading text-muted">
+                                ⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <!-- Gameopardy-->
+                    <div class="collaborator-item">
+                        <a class="collaborator-link" data-bs-toggle="modal" href="#portfolioModal5">
+                            <div class="collaborator-hover">
+                                <div class="collaborator-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/gameopardy-01.jpg" alt="gameopardy" />
+                        </a>
+                        <div class="collaborator-caption">
+                            <div class="collaborator-caption-heading">
+                                <span lang='sp'>Gameopardy</span>
+                                <span lang='eng'>Gameopardy</span>
+                            </div>
+                            <div class="collaborator-caption-subheading text-muted">
+                                ⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- About-->
-    <section class="page-section" id="about">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">About</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>2009-2011</h4>
-                            <h4 class="subheading">Our Humble Beginnings</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>March 2011</h4>
-                            <h4 class="subheading">An Agency is Born</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>December 2015</h4>
-                            <h4 class="subheading">Transition to Full Service</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>July 2020</h4>
-                            <h4 class="subheading">Phase Two Expansion</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image">
-                        <h4>
-                            Be Part
-                            <br />
-                            Of Our
-                            <br />
-                            Story!
-                        </h4>
-                    </div>
-                </li>
-            </ul>
-        </div>
+
     </section>
     <!-- Team-->
     <section class="page-section bg-light" id="team">
@@ -479,7 +540,7 @@
     </footer>
     <!-- Portfolio Modals-->
     <!-- Portfolio item 1 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioCurrent" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
@@ -489,23 +550,48 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
+                                <h2 class="text-uppercase">
+                                    <span lang='sp'>XO Rivals</span>
+                                    <span lang='eng'>XO Rivals</span>
+                                </h2>
+                                <p class="item-intro text-muted">
+                                    <span lang='sp'>Multijugador <i>Unattended</i></span>
+                                    <span lang='eng'>Unattended Multiplayer</span>
+                                </p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/XORivals/banner.jpg"
+                                    alt="XO Rivals Banner" />
+                                <p><span lang='sp'>XO Rivals es un juego para web basado en el tradicional Tic Tac Toe,
+                                        presentando la innovación de que,
+                                        para poder colocar ficha, se debe ganar un minijuego previamente seleccionado.
+                                        Con esta idea se busca proporcionar un unattended multiplayer para que los
+                                        jugadores no tengan que prestar
+                                        atención constante a la conexión del enemigo.</span>
+                                    <span lang='eng'>XO Rivals</span>
+                                </p>
                                 <ul class="list-inline">
                                     <li>
-                                        <strong>Client:</strong>
-                                        Threads
-                                    </li>
-                                    <li>
-                                        <strong>Category:</strong>
-                                        Illustration
+                                        <strong>
+                                            <span lang='sp'>Objetivo:</span>
+                                            <span lang='eng'>Objetive:</span>
+                                        </strong>
+                                        <span lang='sp'>El objetivo final del juego será conseguir ser el primero en
+                                            terminar el tres en raya. Para ello, como ya se ha mencionado anteriormente,
+                                            será necesario completar correctamente los minijuegos que aparezcan antes de
+                                            colocar la ficha, eligiendo el que beneficie al jugador, o incluso, intentar
+                                            hacer que el rival no pueda colocar su ficha eligiendo un minijuego
+                                            difícil.</span>
+                                        <span lang='eng'>XO Rivals</span>
                                     </li>
                                 </ul>
+                                <h2 class="text-uppercase"> ⠀
+                                    <strong>
+                                        <span lang='sp'>Juega aquí:</span>
+                                        <span lang='eng'>Play here:</span>
+                                    </strong>⠀⠀⠀
+                                    <a href="https://vrsdevs.itch.io/xo-rivals" target="_blank"><span class="fa-stack fa-4x">
+                                        <i class="fas fa-play-circle"></i>
+                                    </span>⠀</a>
+                                </h2>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-times me-1"></i>
