@@ -6631,25 +6631,6 @@ fieldset:disabled .btn {
     transition: opacity 0.15s ease;
 }
 
-.carousel-control-prev1,
-.carousel-control-next1 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 15%;
-    padding: 0;
-    color: #686666;
-    text-align: center;
-    background: none;
-    border: 0;
-    opacity: 0.5;
-    transition: opacity 0.15s ease;
-}
-
 @media (prefers-reduced-motion: reduce) {
     .carousel-control-prev,
     .carousel-control-next {
