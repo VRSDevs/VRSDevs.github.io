@@ -51,10 +51,17 @@
                             <span lang='eng'>Team</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">
-                            <span lang='sp'>Contacto</span>
-                            <span lang='eng'>Contact</span></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span lang='sp'>Contáctanos</span>
+                            <span lang='eng'>Contact us</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#contactus"><span lang='sp'>Redes sociales</span>
+                                <span lang='eng'>Social media</span></a>
+                            <a class="dropdown-item" href="#contact">Contacto</span>
+                                <span lang='eng'>Contact us</span></a>
+                        </div>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -513,34 +520,81 @@
             </div>
         </div>
     </section>
+    <!-- Redes Sociales  -->
+    <section class="page-section" id="contactus">
+        <div class="container-fluid">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">
+                    <span lang='sp'>Nuestras redes sociales</span>
+                    <span lang='eng'>Our social media</span>
+                </h2>
+
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div>
+                            <a class="btn btn-light btn-social2 mx-4" href="https://twitter.com/VRSDevs%22%3E"> <i class=" fab fa-twitter fa-2x "></i>
+                            </a>
+                            <a class="btn btn-light btn-social2 mx-4 " href="https://vrsdevs.itch.io/%22%3E"><i
+                                        class=" fab fa-itch-io fa-2x "></i>
+                                </a>
+                            <a class="btn btn-light btn-social2 mx-4 " href="https://www.youtube.com/channel/UC74hDE58Ns8Cb2Q5ln7Kz9Q%22%3E"><i
+                                        class=" fab fa-youtube fa-2x "></i>
+                                </a>
+                            <a class="btn btn-light btn-social2 mx-4 " href="https://github.com/VRSDevs%22%3E"><i
+                                        class=" fab fa-github fa-2x "></i>
+                                </a>
+                            <a class="btn btn-light btn-social2 mx-4 " href="mailto:vrsdevs@gmail.com "><i
+                                        class="fas fa-envelope fa-2x "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Contact-->
     <section class="page-section" id="contact">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">
-                    <span lang='sp'>Contáctanos a través de nuestras Redes Sociales</span>
-                    <span lang='eng'>Contact us by Social Media</span>
+                    <span lang='sp'>¡Contáctanos!</span>
+                    <span lang='eng'>Contact us!</span>
                 </h2>
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div>
-                            <a class="btn btn-light btn-social2 mx-4" href="https://twitter.com/VRSDevs"><i
-                                    class="fab fa-twitter fa-2x"></i></a>
-                            <a class="btn btn-light btn-social2 mx-4" href="https://vrsdevs.itch.io/"><i
-                                    class="fab fa-itch-io fa-2x"></i></a>
-                            <a class="btn btn-light btn-social2 mx-4" href="https://www.youtube.com/channel/UC74hDE58Ns8Cb2Q5ln7Kz9Q"><i
-                                    class="fab fa-youtube fa-2x"></i></a>
-                            <a class="btn btn-light btn-social2 mx-4" href="https://github.com/VRSDevs"><i
-                                    class="fab fa-github fa-2x"></i></a>
-                            <a class="btn btn-light btn-social2 mx-4" href="mailto:vrsdevs@gmail.com"><i
-                                    class="fas fa-envelope fa-2x"></i></a>
+            </div>
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token!-->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="https://formspree.io/f/mayagwgq" method="POST">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" name="name" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                         </div>
-
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" name="_replyto" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required" name="message"></textarea>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-
+                <!-- Submit Button-->
+                <div class="text-center">
+                    <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">
+                            <span lang='sp'>Enviar</span>
+                            <span lang='eng'>Send</span>
+                        </button>
+                </div>
+            </form>
         </div>
     </section>
     <!-- Footer-->
