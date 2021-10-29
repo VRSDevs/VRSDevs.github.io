@@ -51,10 +51,29 @@
                             <span lang='eng'>Team</span>
                         </a>
                     </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#contactus">
+                            <span lang='sp'>Redes Sociales</span>
+                            <span lang='eng'>Social Media</span></a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">
                             <span lang='sp'>Contacto</span>
                             <span lang='eng'>Contact</span></a>
+                    </li> -->
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span lang='sp'>Contáctanos</span>
+                            <span lang='eng'>Contact us</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#contactus"><span lang='sp'>Redes sociales</span>
+                                <span lang='eng'>Social media</span></a>
+                            <a class="dropdown-item" href="#contact">Contacto</span>
+                                <span lang='eng'>Contact us</span></a>
+                        </div>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -66,7 +85,6 @@
                         <div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" id="sp" href="" hreflang="sp" onclick="setLang('sp'); return false">Español</a>
                             <a class="dropdown-item" id="eng" href="" hreflang="eng" onclick="setLang('eng'); return false">English</a>
-
                         </div>
                     </li>
                 </ul>
@@ -78,7 +96,7 @@
     <header class="masthead">
         <div class="container">
             <img class="img-fluid rounded-circle mb-2" src="/assets/img/logoVRS_s.png" alt="..." />
-            <div class="masthead-subheading"><span lang='sp'>Bienvenido a la página de Virtual Ravens Games</span><span lang='eng'>Welcome to the Virtual Ravens Games page</span></div>
+            <div class="masthead-subheading"><span lang='sp'>Bienvenido a la página de Virtual Ravens Games</span><span lang='eng'>Welcome to Virtual Ravens Games page</span></div>
             <div class="masthead-heading text-uppercase"><span lang='sp'>¡Es un placer conocerte!</span> <span lang='eng'>Nice to meet you!</span></div>
             <a class="btn btn-primary btn-xl text-uppercase" href="#nosotros"><span lang='sp'>Leer más sobre
                     nosotros</span> <span lang='eng'>Read more about us</span></a>
@@ -513,82 +531,130 @@
             </div>
         </div>
     </section>
+    <!-- Redes Sociales  -->
+    <section class="page-section" id="contactus">
+        <div class="container-fluid">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">
+                    <span lang='sp'>Nuestras redes sociales</span>
+                    <span lang='eng'>Our social media</span>
+                </h2>
+
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div>
+                            <a class="btn btn-light btn-social2 mx-4" href="https://twitter.com/VRSDevs%22%3E"> <i class=" fab fa-twitter fa-2x "></i>
+                            </a>
+                            <a class="btn btn-light btn-social2 mx-4 " href="https://vrsdevs.itch.io/%22%3E"><i
+                                    class=" fab fa-itch-io fa-2x "></i>
+                            </a>
+                            <a class="btn btn-light btn-social2 mx-4 " href="https://www.youtube.com/channel/UC74hDE58Ns8Cb2Q5ln7Kz9Q%22%3E"><i
+                                    class=" fab fa-youtube fa-2x "></i>
+                            </a>
+                            <a class="btn btn-light btn-social2 mx-4 " href="https://github.com/VRSDevs%22%3E"><i
+                                    class=" fab fa-github fa-2x "></i>
+                            </a>
+                            <a class="btn btn-light btn-social2 mx-4 " href="mailto:vrsdevs@gmail.com "><i
+                                    class="fas fa-envelope fa-2x "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Contact-->
     <section class="page-section" id="contact">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">
-                    <span lang='sp'>Contáctanos a través de nuestras Redes Sociales</span>
-                    <span lang='eng'>Contact us by Social Media</span>
+                    <span lang='sp'>¡Contáctanos!</span>
+                    <span lang='eng'>Contact us!</span>
                 </h2>
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div>
-                            <a class="btn btn-light btn-social2 mx-4" href="https://twitter.com/VRSDevs"><i
-                                    class="fab fa-twitter fa-2x"></i></a>
-                            <a class="btn btn-light btn-social2 mx-4" href="https://vrsdevs.itch.io/"><i
-                                    class="fab fa-itch-io fa-2x"></i></a>
-                            <a class="btn btn-light btn-social2 mx-4" href="https://www.youtube.com/channel/UC74hDE58Ns8Cb2Q5ln7Kz9Q"><i
-                                    class="fab fa-youtube fa-2x"></i></a>
-                            <a class="btn btn-light btn-social2 mx-4" href="https://github.com/VRSDevs"><i
-                                    class="fab fa-github fa-2x"></i></a>
-                            <a class="btn btn-light btn-social2 mx-4" href="mailto:vrsdevs@gmail.com"><i
-                                    class="fas fa-envelope fa-2x"></i></a>
+            </div>
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token!-->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="https://formspree.io/f/mayagwgq" method="POST">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" name="name" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                         </div>
-
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" name="_replyto" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required" name="message"></textarea>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-
+                <!-- Submit Button-->
+                <div class="text-center">
+                    <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">
+                        <span lang='sp'>Enviar</span>
+                        <span lang='eng'>Send</span>
+                    </button>
+                </div>
+            </form>
         </div>
     </section>
+
     <!-- Footer-->
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">Copyright &copy; VRS 2021</div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/VRSDevs"><i
-                            class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://vrsdevs.itch.io/"><i
-                            class="fab fa-itch-io"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/channel/UC74hDE58Ns8Cb2Q5ln7Kz9Q"><i
-                            class="fab fa-youtube"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://github.com/VRSDevs"><i
-                            class="fab fa-github"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="mailto:vrsdevs@gmail.com"><i
-                            class="fas fa-envelope"></i></a>
+    <footer class="footer py-4 ">
+        <div class="container ">
+            <div class="row align-items-center ">
+                <div class="col-lg-4 text-lg-start ">Copyright &copy; VRS 2021</div>
+                <div class="col-lg-4 my-3 my-lg-0 ">
+                    <a class="btn btn-dark btn-social mx-2 " href="https://twitter.com/VRSDevs "><i
+                            class="fab fa-twitter "></i></a>
+                    <a class="btn btn-dark btn-social mx-2 " href="https://vrsdevs.itch.io/ "><i
+                            class="fab fa-itch-io "></i></a>
+                    <a class="btn btn-dark btn-social mx-2 " href="https://www.youtube.com/channel/UC74hDE58Ns8Cb2Q5ln7Kz9Q "><i
+                            class="fab fa-youtube "></i></a>
+                    <a class="btn btn-dark btn-social mx-2 " href="https://github.com/VRSDevs "><i
+                            class="fab fa-github "></i></a>
+                    <a class="btn btn-dark btn-social mx-2 " href="mailto:vrsdevs@gmail.com "><i
+                            class="fas fa-envelope "></i></a>
                 </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3">Privacy Policy</a>
-                    <a class="link-dark text-decoration-none">Terms of Use</a>
+                <div class="col-lg-4 text-lg-end ">
+                    <a class="link-dark text-decoration-none me-3 ">Privacy Policy</a>
+                    <a class="link-dark text-decoration-none ">Terms of Use</a>
                 </div>
             </div>
         </div>
     </footer>
     <!-- Portfolio Modals-->
     <!-- CURRENT PROJECT-->
-    <div class="portfolio-modal modal fade" id="portfolioCurrent" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
+    <div class="portfolio-modal modal fade " id="portfolioCurrent " tabindex="-1 " role="dialog " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="close-modal " data-bs-dismiss="modal "><img src="assets/img/close-icon.svg " alt="Close modal " /></div>
+                <div class="container ">
+                    <div class="row justify-content-center ">
+                        <div class="col-lg-8 ">
+                            <div class="modal-body ">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">
+                                <h2 class="text-uppercase ">
                                     <span lang='sp'>XO Rivals</span>
                                     <span lang='eng'>XO Rivals</span>
                                 </h2>
-                                <p class="item-intro text-muted">
+                                <p class="item-intro text-muted ">
                                     <span lang='sp'>Multijugador <i>Unattended</i></span>
                                     <span lang='eng'>Unattended Multiplayer</span>
                                 </p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/XORivals/banner.jpg" alt="XO Rivals Banner" />
+                                <img class="img-fluid d-block mx-auto " src="assets/img/portfolio/XORivals/banner.jpg " alt="XO Rivals Banner " />
 
-                                <ul class="list-inline">
+                                <ul class="list-inline ">
                                     <li>
                                         <strong>
                                             <span lang='sp'>Sinopsis:</span>
@@ -611,9 +677,9 @@
                                             With this idea we look to produce an unattended multiplayer style so that
                                             the players do not have to pay constant attention
                                             to the game and the rival. </span>
-                                        <div class="col-md-12">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="far fa-window-minimize"></i>
+                                        <div class="col-md-12 ">
+                                            <span class="fa-stack fa-4x ">
+                                                <i class="far fa-window-minimize "></i>
                                             </span>
                                         </div>
                                     </li>
@@ -637,7 +703,7 @@
                                             choose a difficult so that the rival player cannot mark their space.</span>
                                     </li>
                                 </ul>
-                                <h2 class="text-uppercase">
+                                <h2 class="text-uppercase ">
                                     <span lang='sp'>Desarrollando...</span>
                                     <span lang='eng'>Developing...</span> ⠀
                                 </h2>
@@ -646,31 +712,32 @@
                                         <span lang='sp'>Echa un vistazo al proyecto</span>
                                         <span lang='eng'>Take a look to the project</span>
                                     </h4>
-                                    <button class="btn">
-                                        <a class="text-center" href="https://vrsdevs.itch.io/xo-rivals" target="_blank">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                                <i class="fab fa-itch-io fa-stack-1x fa-inverse"></i>
+                                    <button class="btn ">
+                                        <a class="text-center " href="https://vrsdevs.itch.io/xo-rivals "
+                                            target="_blank ">
+                                            <span class="fa-stack fa-4x ">
+                                                <i class="fas fa-circle fa-stack-2x text-primary "></i>
+                                                <i class="fab fa-itch-io fa-stack-1x fa-inverse "></i>
                                             </span>⠀
                                         </a>
                                     </button>
                                 </div>
 
-                                <!-- <h2 class="text-uppercase"> ⠀
+                                <!-- <h2 class="text-uppercase "> ⠀
                                     <strong>
                                         <span lang='sp'>Juega aquí:</span>
                                         <span lang='eng'>Play here:</span>
                                     </strong>
-                                    <button class="btn">
-                                        <a href="https://vrsdevs.itch.io/xo-rivals" target="_blank">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="fas fa-play-circle"></i>
+                                    <button class="btn ">
+                                        <a href="https://vrsdevs.itch.io/xo-rivals " target="_blank ">
+                                            <span class="fa-stack fa-4x ">
+                                                <i class="fas fa-play-circle "></i>
                                             </span>⠀
                                         </a>
                                     </button>⠀⠀⠀
                                 </h2> -->
-                                <button class="btn btn-primary btn-xl text-uppercase text " data-bs-dismiss="modal" type="button">
-                                    <i class="fas fa-times me-1"></i>
+                                <button class="btn btn-primary btn-xl text-uppercase text " data-bs-dismiss="modal " type="button ">
+                                    <i class="fas fa-times me-1 "></i>
                                     Close
                                 </button>
                             </div>
@@ -681,53 +748,53 @@
         </div>
     </div>
     <!-- LAST PROJECT-->
-    <div class="portfolio-modal modal fade" id="portfolioLast" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
+    <div class="portfolio-modal modal fade " id="portfolioLast " tabindex="-1 " role="dialog " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="close-modal " data-bs-dismiss="modal "><img src="assets/img/close-icon.svg " alt="Close modal " /></div>
+                <div class="container ">
+                    <div class="row justify-content-center ">
+                        <div class="col-lg-8 ">
+                            <div class="modal-body ">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">
+                                <h2 class="text-uppercase ">
                                     <span lang='sp'>Looping Crystal</span>
                                     <span lang='eng'>Looping Crystal</span>
                                 </h2>
-                                <p class="item-intro text-muted">
+                                <p class="item-intro text-muted ">
                                     <span lang='sp'>Juego de plataformas</span>
                                     <span lang='eng'>Platform game</span>
                                 </p>
                                 <!-- Carousel -->
-                                <div id="carouselLC" class="carousel slide carousel-fade caro" data-bs-ride="carousel">
+                                <div id="carouselLC " class="carousel slide carousel-fade caro " data-bs-ride="carousel ">
 
                                     <!-- The slideshow/carousel -->
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item col">
-                                            <img src="assets/img/portfolio/LoopingCrystal/preview.png" alt="preview" class="d-block w-100">
+                                    <div class="carousel-inner ">
+                                        <div class="carousel-item col ">
+                                            <img src="assets/img/portfolio/LoopingCrystal/preview.png " alt="preview " class="d-block w-100 ">
                                         </div>
-                                        <div class="carousel-item active">
-                                            <img src="assets/img/portfolio/LoopingCrystal/intro.png" alt="Intro" class="d-block w-100">
+                                        <div class="carousel-item active ">
+                                            <img src="assets/img/portfolio/LoopingCrystal/intro.png " alt="Intro " class="d-block w-100 ">
                                         </div>
-                                        <div class="carousel-item">
-                                            <img src="assets/img/portfolio/LoopingCrystal/menu.png" alt="menu" class="d-block w-100">
+                                        <div class="carousel-item ">
+                                            <img src="assets/img/portfolio/LoopingCrystal/menu.png " alt="menu " class="d-block w-100 ">
                                         </div>
-                                        <div class="carousel-item">
-                                            <img src="assets/img/portfolio/LoopingCrystal/Pause.png" alt="pause" class="d-block w-100">
+                                        <div class="carousel-item ">
+                                            <img src="assets/img/portfolio/LoopingCrystal/Pause.png " alt="pause " class="d-block w-100 ">
                                         </div>
 
                                     </div>
 
                                     <!-- Left and right controls/icons -->
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselLC" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon"></span>
+                                    <button class="carousel-control-prev " type="button " data-bs-target="#carouselLC " data-bs-slide="prev ">
+                                        <span class="carousel-control-prev-icon "></span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselLC" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon"></span>
+                                    <button class="carousel-control-next " type="button " data-bs-target="#carouselLC " data-bs-slide="next ">
+                                        <span class="carousel-control-next-icon "></span>
                                     </button>
                                 </div>
                                 <!-- -- -->
-                                <ul class="list-inline">
+                                <ul class="list-inline ">
                                     <li>
                                         <strong>
                                             <span lang='sp'>Sinopsis:</span>
@@ -745,9 +812,9 @@
                                             hidden in it. Due to a magic coming from the cave , you must help to get out
                                             of
                                             there and solve the mystery.</span>
-                                        <div class="col-md-12">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="far fa-window-minimize"></i>
+                                        <div class="col-md-12 ">
+                                            <span class="fa-stack fa-4x ">
+                                                <i class="far fa-window-minimize "></i>
                                             </span>
                                         </div>
                                     </li>
@@ -765,21 +832,21 @@
                                             Moreover, there are 4 collectionables that you can pick them up.</span>
                                     </li>
                                 </ul>
-                                <h2 class="text-uppercase"> ⠀
+                                <h2 class="text-uppercase "> ⠀
                                     <strong>
                                         <span lang='sp'>Juega aquí:</span>
                                         <span lang='eng'>Play here:</span>
                                     </strong>⠀⠀⠀
-                                    <button class="btn">
-                                        <a href="https://blinx24.itch.io/looping-crystal" target="_blank">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="fas fa-play-circle"></i>
+                                    <button class="btn ">
+                                        <a href="https://blinx24.itch.io/looping-crystal " target="_blank ">
+                                            <span class="fa-stack fa-4x ">
+                                                <i class="fas fa-play-circle "></i>
                                             </span>⠀
                                         </a>
                                     </button>
                                 </h2>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <i class="fas fa-times me-1"></i>
+                                <button class="btn btn-primary btn-xl text-uppercase " data-bs-dismiss="modal " type="button ">
+                                    <i class="fas fa-times me-1 "></i>
                                     Close
                                 </button>
                             </div>
@@ -790,54 +857,54 @@
         </div>
     </div>
     <!-- PROJECT 1-->
-    <div class="portfolio-modal modal fade" id="portfolioOne" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
+    <div class="portfolio-modal modal fade " id="portfolioOne " tabindex="-1 " role="dialog " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="close-modal " data-bs-dismiss="modal "><img src="assets/img/close-icon.svg " alt="Close modal " /></div>
+                <div class="container ">
+                    <div class="row justify-content-center ">
+                        <div class="col-lg-8 ">
+                            <div class="modal-body ">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">
+                                <h2 class="text-uppercase ">
                                     <span lang='sp'>Origins</span>
                                     <span lang='eng'>Origins</span>
                                 </h2>
-                                <p class="item-intro text-muted">
+                                <p class="item-intro text-muted ">
                                     <span lang='sp'>Atrapa la bandera</span>
                                     <span lang='eng'>Capture the flag</span>
                                 </p>
                                 <!-- Carousel -->
-                                <div id="carouselOG" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div id="carouselOG " class="carousel slide carousel-fade " data-bs-ride="carousel ">
 
                                     <!-- The slideshow/carousel -->
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item">
-                                            <img src="assets/img/portfolio/Origins/characters.png" alt="character" class="d-block w-100">
+                                    <div class="carousel-inner ">
+                                        <div class="carousel-item ">
+                                            <img src="assets/img/portfolio/Origins/characters.png " alt="character " class="d-block w-100 ">
                                         </div>
-                                        <div class="carousel-item active">
-                                            <img src="assets/img/portfolio/Origins/game.png" alt="game" class="d-block w-100">
+                                        <div class="carousel-item active ">
+                                            <img src="assets/img/portfolio/Origins/game.png " alt="game " class="d-block w-100 ">
                                         </div>
-                                        <div class="carousel-item">
-                                            <img src="assets/img/portfolio/Origins/menuppal.png" alt="menu" class="d-block w-100">
+                                        <div class="carousel-item ">
+                                            <img src="assets/img/portfolio/Origins/menuppal.png " alt="menu " class="d-block w-100 ">
                                         </div>
-                                        <div class="carousel-item">
-                                            <img src="assets/img/portfolio/Origins/modes.png" alt="modes" class="d-block w-100">
+                                        <div class="carousel-item ">
+                                            <img src="assets/img/portfolio/Origins/modes.png " alt="modes " class="d-block w-100 ">
                                         </div>
-                                        <div class="carousel-item">
-                                            <img src="assets/img/portfolio/Origins/salas.png" alt="salas" class="d-block w-100">
+                                        <div class="carousel-item ">
+                                            <img src="assets/img/portfolio/Origins/salas.png " alt="salas " class="d-block w-100 ">
                                         </div>
                                     </div>
                                     <!-- Left and right controls/icons -->
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselOG" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon"></span>
+                                    <button class="carousel-control-prev " type="button " data-bs-target="#carouselOG " data-bs-slide="prev ">
+                                        <span class="carousel-control-prev-icon "></span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselOG" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon"></span>
+                                    <button class="carousel-control-next " type="button " data-bs-target="#carouselOG " data-bs-slide="next ">
+                                        <span class="carousel-control-next-icon "></span>
                                     </button>
                                 </div>
                                 <!-- -- -->
-                                <ul class="list-inline">
+                                <ul class="list-inline ">
                                     <li>
                                         <strong>
                                             <span lang='sp'>Sinopsis:</span>
@@ -852,9 +919,9 @@
                                         <span lang='eng'><i>Origins</i> is a PC game where you have to control one of
                                             Nature Elements who need the energy of a materia call <i>dark matter</i>.
                                             You can catch it or you can steal from other players. </span>
-                                        <div class="col-md-12">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="far fa-window-minimize"></i>
+                                        <div class="col-md-12 ">
+                                            <span class="fa-stack fa-4x ">
+                                                <i class="far fa-window-minimize "></i>
                                             </span>
                                         </div>
                                     </li>
@@ -873,12 +940,12 @@
                                             possible to win a higher score than your enemys </span>
                                     </li>
                                 </ul>
-                                <h2 class="text-uppercase">
+                                <h2 class="text-uppercase ">
                                     <span lang='sp'>Desarrollando...</span>
                                     <span lang='eng'>Developing...</span>
                                 </h2>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <i class="fas fa-times me-1"></i>
+                                <button class="btn btn-primary btn-xl text-uppercase " data-bs-dismiss="modal " type="button ">
+                                    <i class="fas fa-times me-1 "></i>
                                     Close
                                 </button>
                             </div>
@@ -889,21 +956,21 @@
         </div>
     </div>
     <!-- ReRoc-->
-    <div class="collaborator-modal modal fade" id="portfolioReRoc" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
+    <div class="collaborator-modal modal fade " id="portfolioReRoc " tabindex="-1 " role="dialog " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="close-modal " data-bs-dismiss="modal "><img src="assets/img/close-icon.svg " alt="Close modal " /></div>
+                <div class="container ">
+                    <div class="row justify-content-center ">
+                        <div class="col-lg-8 ">
+                            <div class="modal-body ">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">
+                                <h2 class="text-uppercase ">
                                     <span lang='sp'>ReRoc Games</span>
                                     <span lang='eng'>ReRoc Games</span>
                                 </h2>
 
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/RerocGames/Banner.jpg" alt="Reroc banner" />
+                                <img class="img-fluid d-block mx-auto " src="assets/img/portfolio/RerocGames/Banner.jpg " alt="Reroc banner " />
 
                                 <p>
                                     <span lang='sp'>Somos dos desarrolladores de videojuegos especializados en el
@@ -915,6 +982,7 @@
                                         our first
                                         project was <i>Frikizz</i>. Working with Virtual Ravens Games </span>
                                 </p>
+
                                 <div>
                                     <h2 class="text-uppercase"> ⠀
                                         <strong>
@@ -926,6 +994,7 @@
                                             <span class="fa-stack fa-4x">
                                                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
                                                 <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+
                                             </span>⠀
                                         </a>
                                         <a href="https://www.youtube.com/channel/UCe_WALkvXJ7XZl066cx35UA" target="_blank">
@@ -935,6 +1004,7 @@
                                             </span>⠀
                                         </a>
                                     </button>⠀⠀⠀
+
 
                                 </div>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -949,27 +1019,27 @@
         </div>
     </div>
     <!-- ReRoc Project 1 -->
-    <div class="portfolio-modal modal fade" id="RRGFirst" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
+    <div class="portfolio-modal modal fade " id="RRGFirst " tabindex="-1 " role="dialog " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="close-modal " data-bs-dismiss="modal "><img src="assets/img/close-icon.svg " alt="Close modal " /></div>
+                <div class="container ">
+                    <div class="row justify-content-center ">
+                        <div class="col-lg-8 ">
+                            <div class="modal-body ">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Frikizz</h2>
-                                <p class="item-intro text-muted">
+                                <h2 class="text-uppercase ">Frikizz</h2>
+                                <p class="item-intro text-muted ">
                                     <span lang='sp'>Aplicación de preguntas</span>
                                     <span lang='eng'>Quiz app</span>
                                 </p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/RerocGames/Imagen1.png" alt="mockup" />
-                                <h2 class="text-uppercase">
+                                <img class="img-fluid d-block mx-auto " src="assets/img/portfolio/RerocGames/Imagen1.png " alt="mockup " />
+                                <h2 class="text-uppercase ">
                                     <span lang='sp'>Desarrollando...</span>
                                     <span lang='eng'>Developing...</span>
                                 </h2>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <i class="fas fa-times me-1"></i>
+                                <button class="btn btn-primary btn-xl text-uppercase " data-bs-dismiss="modal " type="button ">
+                                    <i class="fas fa-times me-1 "></i>
                                     Close Project
                                 </button>
                             </div>
@@ -980,26 +1050,26 @@
         </div>
     </div>
     <!-- ReRoc Project 2-->
-    <div class="portfolio-modal modal fade" id="RRGSec" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
+    <div class="portfolio-modal modal fade " id="RRGSec " tabindex="-1 " role="dialog " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="close-modal " data-bs-dismiss="modal "><img src="assets/img/close-icon.svg " alt="Close modal " /></div>
+                <div class="container ">
+                    <div class="row justify-content-center ">
+                        <div class="col-lg-8 ">
+                            <div class="modal-body ">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Escape!</h2>
-                                <p class="item-intro text-muted">
+                                <h2 class="text-uppercase ">Escape!</h2>
+                                <p class="item-intro text-muted ">
                                     <span lang='sp'>Escape Room de terror</span>
                                     <span lang='eng'>Terror Scape Room</span>
                                 </p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/RerocGames/PORTADA.jpg" alt="portada" />
-                                <h2 class="text-uppercase">
+                                <img class="img-fluid d-block mx-auto " src="assets/img/portfolio/RerocGames/PORTADA.jpg " alt="portada " />
+                                <h2 class="text-uppercase ">
                                     <span lang='sp'>Desarrollando...</span>
                                     <span lang='eng'>Developing...</span></p>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-times me-1"></i>
+                                    <button class="btn btn-primary btn-xl text-uppercase " data-bs-dismiss="modal " type="button ">
+                                        <i class="fas fa-times me-1 "></i>
                                         Close Project
                                     </button>
                             </div>
@@ -1010,21 +1080,21 @@
         </div>
     </div>
     <!-- MrWojack -->
-    <div class="collaborator-modal modal fade" id="portfolioMrWojack" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
+    <div class="collaborator-modal modal fade " id="portfolioMrWojack " tabindex="-1 " role="dialog " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="close-modal " data-bs-dismiss="modal "><img src="assets/img/close-icon.svg " alt="Close modal " /></div>
+                <div class="container ">
+                    <div class="row justify-content-center ">
+                        <div class="col-lg-8 ">
+                            <div class="modal-body ">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">
+                                <h2 class="text-uppercase ">
                                     <span lang='sp'>MrWojack</span>
                                     <span lang='eng'>MrWojack</span>
                                 </h2>
 
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/MrWojack-01.jpg" alt="MrWojack banner" />
+                                <img class="img-fluid d-block mx-auto " src="assets/img/portfolio/MrWojack-01.jpg " alt="MrWojack banner " />
 
                                 <p>
                                     <span lang='sp'>Pequeño estudio de desarrollo de aplicaciones moviles asociado al
@@ -1032,8 +1102,8 @@
                                     <span lang='eng'>Small apps development team asociated with Virtual Ravens Games
                                     </span>
                                 </p>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <i class="fas fa-times me-1"></i>
+                                <button class="btn btn-primary btn-xl text-uppercase " data-bs-dismiss="modal " type="button ">
+                                    <i class="fas fa-times me-1 "></i>
                                     Close
                                 </button>
                             </div>
@@ -1044,33 +1114,33 @@
         </div>
     </div>
     <!-- MrWojack Project 1 -->
-    <div class="portfolio-modal modal fade" id="MRJFirst" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
+    <div class="portfolio-modal modal fade " id="MRJFirst " tabindex="-1 " role="dialog " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="close-modal " data-bs-dismiss="modal "><img src="assets/img/close-icon.svg " alt="Close modal " /></div>
+                <div class="container ">
+                    <div class="row justify-content-center ">
+                        <div class="col-lg-8 ">
+                            <div class="modal-body ">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Gameopardy</h2>
-                                <p class="item-intro text-muted">
+                                <h2 class="text-uppercase ">Gameopardy</h2>
+                                <p class="item-intro text-muted ">
                                     <span lang='sp'>Aplicación de preguntas</span>
                                     <span lang='eng'>Quiz app</span>
                                 </p>
-                                <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/RerocGames/Imagen1.png"
-                                    alt="mockup" />
-                                <h2 class="text-uppercase">
+                                <!-- <img class="img-fluid d-block mx-auto " src="assets/img/portfolio/RerocGames/Imagen1.png "
+                                    alt="mockup " />
+                                <h2 class="text-uppercase ">
                                     <span lang='sp'>Desarrollando...</span>
                                     <span lang='eng'>Developing...</span>
                                 </h2>
                                 -->
-                                <h3 class="text-uppercase">
+                                <h3 class="text-uppercase ">
                                     <span lang='sp'>Desarrollando...</span>
                                     <span lang='eng'>Developing...</span>
                                 </h3>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <i class="fas fa-times me-1"></i>
+                                <button class="btn btn-primary btn-xl text-uppercase " data-bs-dismiss="modal " type="button ">
+                                    <i class="fas fa-times me-1 "></i>
                                     Close Project
                                 </button>
                             </div>
@@ -1081,14 +1151,14 @@
         </div>
     </div>
     <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js "></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js "></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js "></script>
 </body>
 
 </html>
