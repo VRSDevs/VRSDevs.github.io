@@ -2063,7 +2063,7 @@ progress {
     font-weight: 400;
     line-height: 1.5;
     color: #424549;
-    background-color: rgb(233, 208, 227);
+    background-color: rgb(208, 229, 233);
     background-clip: padding-box;
     border: 1px solid #ced4da;
     -webkit-appearance: none;
@@ -3041,20 +3041,20 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
-    color: #424549;
+    color: #8d939b;
     background-color: #50718a;
     border-color: #50718a;
 }
 
 .btn-primary:hover {
-    color: #424549;
+    color: #959ca5;
     background-color: #4a81aa;
     border-color: #4b81aa;
 }
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
-    color: #424549;
+    color: #81868d;
     background-color: #4b81aa;
     border-color: #4b81aa;
     box-shadow: 0 0 0 0.25rem #4b81aa;
@@ -3065,7 +3065,7 @@ fieldset:disabled .btn {
 .btn-primary:active,
 .btn-primary.active,
 .show>.btn-primary.dropdown-toggle {
-    color: #424549;
+    color: #999ca0;
     background-color: #3f739b;
     border-color: #3b6e96;
 }
@@ -3080,9 +3080,9 @@ fieldset:disabled .btn {
 
 .btn-primary:disabled,
 .btn-primary.disabled {
-    color: #424549;
-    background-color: #38678b;
-    border-color: #38678b;
+    color: #737981;
+    background-color: #6b8da7;
+    border-color: #6b8da7;
 }
 
 .btn-secondary {
