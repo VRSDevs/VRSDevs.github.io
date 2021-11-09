@@ -84,11 +84,11 @@ function setLang(lang) {
 
 function ChangeColor(lang) {
     if (lang === 'sp') {
-        document.getElementById('sp').style.color = "#aa9edd";
-        document.getElementById('eng').style.color = "#1a2a3a";
+        document.getElementById('sp').style.color = "#305978";
+        document.getElementById('eng').style.color = "#282428";
     } else {
-        document.getElementById('sp').style.color = "#1a2a3a";
-        document.getElementById('eng').style.color = "#aa9edd";
+        document.getElementById('sp').style.color = "#282428";
+        document.getElementById('eng').style.color = "#305978";
     }
 }
 

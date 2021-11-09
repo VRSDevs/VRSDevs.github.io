@@ -84,11 +84,10 @@
     <!-- Masthead-->
     <header class="masthead">
         <div class="container">
-            <img class="img-fluid rounded-circle mb-2" src="/assets/img/logoVRS_s.png" alt="..." />
-            <div class="masthead-subheading"><span lang='sp'>Bienvenido a la página de Virtual Ravens Games</span><span lang='eng'>Welcome to the Virtual Ravens Games page</span></div>
+            <!-- <div class="masthead-subheading"><span lang='sp'>Bienvenido a la página de Virtual Ravens Games</span><span lang='eng'>Welcome to the Virtual Ravens Games page</span></div>
             <div class="masthead-heading text-uppercase"><span lang='sp'>¡Es un placer conocerte!</span> <span lang='eng'>Nice to meet you!</span></div>
             <a class="btn btn-primary btn-xl text-uppercase" href="#nosotros"><span lang='sp'>Leer más sobre
-                    nosotros</span> <span lang='eng'>Read more about us</span></a>
+                    nosotros</span> <span lang='eng'>Read more about us</span></a> -->
         </div>
     </header>
     <!-- Nosotros-->
@@ -413,10 +412,10 @@
                     <span lang='eng'>Our amazing Team</span>
                 </h2>
             </div>
-            <div id="carouselTeam" class="carousel slide" data-ride="carousel">
+            <div id="carouselTeam" class="carousel slide" data-ride="carousel" data-interval="500">
                 <div class="carousel-inner row w-40 mx-auto" role="listbox">
                     <!-- Rocio -->
-                    <div class="carousel-item col-4 col-sm-6 col-md-4 col-lg-3 active">
+                    <div class="carousel-item col-4 col-sm-6 col-md-4 col-lg-3 active" data-slide-to="2">
                         <div class="carousel-caption">
                             <h3 class="section-heading text-uppercase">Rocío Campo</h3>
                             <h4 class="section-subheading text-muted">
@@ -429,7 +428,7 @@
                         <img src="assets/img/team/Ro.png" class="img-fluid mx-auto d-block" alt="Ro">
                     </div>
                     <!-- Requena  -->
-                    <div class="carousel-item col-4 col-sm-6 col-md-4 col-lg-3">
+                    <div class="carousel-item col-4 col-sm-6 col-md-4 col-lg-3 ">
                         <div class="carousel-caption">
                             <h3 class="section-heading text-uppercase">Alejandro Requena</h3>
                             <h4 class="section-subheading text-muted">
@@ -647,13 +646,13 @@
                                     <span lang='sp'>XO Rivals</span>
                                     <span lang='eng'>XO Rivals</span>
                                 </h2>
-                                <p class="item-intro text-muted">
+                                <p class="item-intro text-muted2">
                                     <span lang='sp'>Multijugador <i>Unattended</i></span>
                                     <span lang='eng'>Unattended Multiplayer</span>
                                 </p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/XORivals/banner.jpg" alt="XO Rivals Banner" />
 
-                                <ul class="list-inline">
+                                <ul class="list-inline text-modal">
                                     <li>
                                         <strong>
                                             <span lang='sp'>Sinopsis:</span>
@@ -759,7 +758,7 @@
                                     <span lang='sp'>Looping Crystal</span>
                                     <span lang='eng'>Looping Crystal</span>
                                 </h2>
-                                <p class="item-intro text-muted">
+                                <p class="item-intro text-muted2">
                                     <span lang='sp'>Juego de plataformas</span>
                                     <span lang='eng'>Platform game</span>
                                 </p>
@@ -792,7 +791,7 @@
                                     </button>
                                 </div>
                                 <!-- -- -->
-                                <ul class="list-inline">
+                                <ul class="list-inline text text-modal">
                                     <li>
                                         <strong>
                                             <span lang='sp'>Sinopsis:</span>
@@ -838,7 +837,8 @@
                                     <button class="btn">
                                         <a href="https://blinx24.itch.io/looping-crystal" target="_blank">
                                             <span class="fa-stack fa-4x">
-                                                <i class="fas fa-play-circle"></i>
+                                                <i class="fas fa-play-circle text-primary"></i>
+                                               
                                             </span>⠀
                                         </a>
                                     </button>
@@ -868,7 +868,7 @@
                                     <span lang='sp'>Origins</span>
                                     <span lang='eng'>Origins</span>
                                 </h2>
-                                <p class="item-intro text-muted">
+                                <p class="item-intro text-muted2">
                                     <span lang='sp'>Atrapa la bandera</span>
                                     <span lang='eng'>Capture the flag</span>
                                 </p>
@@ -902,7 +902,7 @@
                                     </button>
                                 </div>
                                 <!-- -- -->
-                                <ul class="list-inline">
+                                <ul class="list-inline text-modal">
                                     <li>
                                         <strong>
                                             <span lang='sp'>Sinopsis:</span>
@@ -970,7 +970,7 @@
 
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/RerocGames/Banner.jpg" alt="Reroc banner" />
 
-                                <p>
+                                <p class="text-modal">
                                     <span lang='sp'>Somos dos desarrolladores de videojuegos especializados en el
                                         desarrollo de aplicaciones móviles y de videojuegos en Realidad Virtual.
                                         Hemos surgido recientemente con la aplicación de <i>Frikizz</i>, así que todavia
@@ -1026,7 +1026,7 @@
                             <div class="modal-body">
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">Frikizz</h2>
-                                <p class="item-intro text-muted">
+                                <p class="item-intro text-muted2">
                                     <span lang='sp'>Aplicación de preguntas</span>
                                     <span lang='eng'>Quiz app</span>
                                 </p>
@@ -1057,7 +1057,7 @@
                             <div class="modal-body">
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">Escape!</h2>
-                                <p class="item-intro text-muted">
+                                <p class="item-intro text-muted2">
                                     <span lang='sp'>Escape Room de terror</span>
                                     <span lang='eng'>Terror Scape Room</span>
                                 </p>
@@ -1093,7 +1093,7 @@
 
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/MrWojack-01.jpg" alt="MrWojack banner" />
 
-                                <p>
+                                <p class="text-modal">
                                     <span lang='sp'>Pequeño estudio de desarrollo de aplicaciones moviles asociado al
                                         equipo de Virtual Ravens Games.</span>
                                     <span lang='eng'>Small apps development team asociated with Virtual Ravens Games
@@ -1121,7 +1121,7 @@
                             <div class="modal-body">
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">Gameopardy</h2>
-                                <p class="item-intro text-muted">
+                                <p class="item-intro text-muted2">
                                     <span lang='sp'>Aplicación de preguntas</span>
                                     <span lang='eng'>Quiz app</span>
                                 </p>
