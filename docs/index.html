@@ -2,1221 +2,262 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/Index/Logo_VRS.ico" />
     <title>Virtual Ravens Games</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="/assets/img/logoVRS.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/185ff8ed97.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+<body>
+    <!-- header -->
+    <div id="header">
         <div class="container">
-            <a class="navbar-brand" href="#page-top"><img src="assets/img/virtualravens.svg" alt="VRS name" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars ms-1"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#nosotros">
-                            <span lang='sp'>Nosotros</span>
-                            <span lang='eng'>About us</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">
-                            <span lang='sp'>Proyectos</span>
-                            <span lang='eng'>Projects</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#collaborator">
-                            <span lang='sp'>Colaboradores</span>
-                            <span lang='eng'>Collaborators</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">
-                            <span lang='sp'>Equipo</span>
-                            <span lang='eng'>Team</span>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span lang='sp'>Contáctanos</span>
-                            <span lang='eng'>Contact us</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#contactus"><span lang='sp'>Redes sociales</span>
-                                <span lang='eng'>Social media</span></a>
-                            <a class="dropdown-item" href="#contact"><span lang='sp'>Contacto</span>
-                                <span lang='eng'>Contact us</span></a>
-                        </div>
-                    </li>
+            <nav>
+                <a href="index.html"><img src="assets/Index/logo_banner.png" alt="Logo" class="logo"></a>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span lang='sp'>Idioma</span>
-                            <span lang='eng'>Language</span>
-                        </a>
-                        <!-- Here's the magic. Add the .animate and .slideIn classes to your .dropdown-menu and you're all set! -->
-                        <div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" id="sp" href="" hreflang="sp" onclick="setLang('sp'); return false">Español</a>
-                            <a class="dropdown-item" id="eng" href="" hreflang="eng" onclick="setLang('eng'); return false">English</a>
-
-                        </div>
-                    </li>
+                <ul id="sidemenu">
+                    <li></li>
+                    <li><a href="#portfolio">Games</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
-            </div>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
         </div>
-    </nav>
+    </div>
 
-    <!-- Masthead-->
-    <header class="masthead">
+    <!-- Portfolio -->
+    <div id="portfolio">
         <div class="container">
-            <!-- <div class="masthead-subheading"><span lang='sp'>Bienvenido a la página de Virtual Ravens Games</span><span lang='eng'>Welcome to the Virtual Ravens Games page</span></div>
-            <div class="masthead-heading text-uppercase"><span lang='sp'>¡Es un placer conocerte!</span> <span lang='eng'>Nice to meet you!</span></div>
-            <a class="btn btn-primary btn-xl text-uppercase" href="#nosotros"><span lang='sp'>Leer más sobre
-                    nosotros</span> <span lang='eng'>Read more about us</span></a> -->
-        </div>
-    </header>
-    <!-- Nosotros-->
-    <section class="page-section" id="nosotros">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">
-                    <span lang='sp'>¿Quién somos?</span>
-                    <span lang='eng'>Who are we?</span>
-                </h2>
-                <p class="text-muted">
-                    <span lang='sp'>Somos un pequeño equipo de <b>desarrolladores de videojuegos</b> y nos encanta
-                        nuestro trabajo. Hemos creado algunos títulos como <i>Origins</i> o <i>Looping Crystal</i>.
-                        En esta página puedes echar un ojo a los proyectos que más te gusten.</span>
-                    <span lang='eng'>We are a small team of <b>game developers</b> and we love our work. We have created
-                        some titles like <i>Origins</i> or <i>Looping Crystal</i>. On this web, you can take a look of
-                        some projects that you like the most</span>
+            <h1 class="sub-title">Our games</h1>
+            <div class="work-list">
+                <!-- visibles  -->
+                <div class="work">
+                    <img src="assets/Index/jadoraki.png" alt="jadoraki">
+                    <div class="layer">
+                        <h3>Jadoraki</h3>
+                        <p>VR Game adventure </p>
+                        <a href="jadoraki.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/Index/XORivals.png" alt="xo-rivals">
+                    <div class="layer">
+                        <h3>XO Rivals</h3>
+                        <p>Unattended multiplayer</p>
+                        <a href="xo-rivals.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/Index/LittleRescue.png" alt="little-rescue">
+                    <div class="layer">
+                        <h3>Little Rescue</h3>
+                        <p>Mobile app</p>
+                        <a href="little-rescue.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
 
-                </p>
-                <p class="text-muted">
-                    <span lang='sp'>Además, tenemos mini-equipos de desarrollo, creando muchos más proyectos de manera
-                        simultánea.</span>
-                    <span lang='eng'>Also, we have mini development teams, so we are creating many projects
-                        simultaneously.</span>
-                </p>
-                <p> </p>
-                <h2 class="section-heading text-uppercase">
-                    <span lang='sp'>¿Cómo surgió el equipo?</span>
-                    <span lang='eng'>How did the team come together?</span>
-                </h2>
-                <p class="text-muted">
-                    <span lang='sp'>Durante la Universidad, empezamos algunos de nosotros a crear pequeños proyectos
-                        bajo el nombre de <i>Armoony's</i>. Después del desarrollo
-                        de <i>Origins</i>, descubrimos que funcionábamos mejor como equipo de lo que creíamos. Nos
-                        apuntamos a <i>Game Jams</i> y, gracias a la primera en la que participamos,
-                        surgió el equipo que conocemos hoy; <b>Virtual Ravens Games o VRS</b>. Poco a poco se han ido
-                        sumando desarrolladores al equipo para desarrollar nuevos proyectos y
-                        esperamos poder dar mucho más de nosotros para crear lo que más nos gusta: los videojuegos.
-                    </span>
-                    <span lang='eng'>During college, some of us started to develop small projects under the moniker of
-                        <i>Armoony's</i>.
-                        After the development of <i>Origins</i>, we learned that we worked much better as a team than
-                        what we originally expected.
-                        We decided to take part on some <i>Game Jams</i> and thanks to the first one we participated in,
-                        the team that we know today was finalLy formed: <b>Virtual Ravens Games or VRS</b>.
-                        Little by little, more developers have joined the team to create new projects. We hope we can
-                        give our 120% to create what we love the most: videogames.
-                    </span>
-                </p>
+
             </div>
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-gamepad fa-stack-1x fa-inverse"></i>
-                    </span>
+            <a class="btn" onclick="openWork('see-more')" id="read">See more</a>
+            <div class="work-list unactive" id="see-more">
+                <!-- invisibles  -->
+                <div class="work">
+                    <img src="assets/Index/Saturada.png" alt="saturada">
+                    <div class="layer">
+                        <h3>Saturada</h3>
+                        <p>Z Jam 2022</p>
+                        <a href="saturada.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/Index/Origins.png" alt="origins">
+                    <div class="layer">
+                        <h3>Origins</h3>
+                        <p>PC Multiplayer</p>
+                        <a href="origins.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/Index/LoopingCrystal.png" alt="looping-crystal">
+                    <div class="layer">
+                        <h3>Looping Crystal</h3>
+                        <p>GameGen Jam 1</p>
+                        <a href="looping.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="assets/Index/Escape.png" alt="escape!">
+                    <div class="layer">
+                        <h3>Escape!</h3>
+                        <p>Cardboard app</p>
+                        <a href="escape.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
             </div>
+
         </div>
-    </section>
-    <!-- Portfolio Grid-->
-    <section class="page-section bg-light" id="portfolio">
-        <!-- Virtual Ravens -->
+
+    </div>
+    <!-- about -->
+    <div id="about">
         <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">
-                    <span lang='sp'>Nuestros proyectos</span>
-                    <span lang='eng'>Our projects</span>
-                </h2>
-                <h3 class="section-subheading text-muted">
-                    <span lang='sp'>Disponibles en Itch.io</span>
-                    <span lang='eng'>Available on Itch.io</span>
-                </h3>
-            </div>
             <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Current project-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioCurrent">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/XORivals-01.png" alt="XORivals" />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">
-                                <span lang='sp'>XO Rivals</span>
-                                <span lang='eng'>XO Rivals</span>
-                            </div>
-                            <div class="portfolio-caption-subheading text-muted">
-                                <span lang='sp'>Proyecto Actual</span>
-                                <span lang='eng'>Current Project</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="about-col-1">
+                    <img src="assets/Index/vrs.jpg" alt="Rocio">
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Looping Crystal-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioLast">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/loopingCrystal-01.jpg" alt="loopingCrystal" />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">
-                                <span lang='sp'>Looping Crystal</span>
-                                <span lang='eng'>Looping Crystal</span>
-                            </div>
-                            <div class="portfolio-caption-subheading text-muted">
-                                <span lang='sp'>Último proyecto</span>
-                                <span lang='eng'>Lastest project</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Origins-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioOne">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Origins-01.jpg" alt="origins" />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">
-                                <span lang='sp'>Origins</span>
-                                <span lang='eng'>Origins</span>
-                            </div>
-                            <div class="portfolio-caption-subheading text-muted">
-                                ⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Know us</h1>
+                    <h4> Exactly who are we?</h4>
+                    <p>
+                        We are a small team of <b class="about-me-text">indie game developers</b> who love what we do. We put our heart and soul into every project we work on in order to create the best games possible. We are best known for our games
+                        such as <b class="about-me-text"><i>XO Rivals</i></b> or <b class="about-me-text"><i>Jadoraki</i></b>.
 
-                <!-- <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <!-- Portfolio item 4--7>
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Lines</div>
-                            <div class="portfolio-caption-subheading text-muted">Branding</div>
-                        </div>
-                    </div>
+                    </p>
+                    <br><br>
+                    <h4> Team coming together: how did it happen?</h4>
+                    <p>
+                        Virtual Ravens was formed <b class="about-me-text">in 2019</b>, where we made our first PC game: <i class="about-me-text">Origins</i>. Over time, we developed for game jams until finally we decided to start working with
+                        <b class="about-me-text">virtual reality</b>. Escape! with the game first introduced us to this world, but it wasn't until <b class="about-me-text">Jadoraki</b> that we <b class="about-me-text">fully immersed</b> ourselves in virtual
+                        reality.
+                    </p>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                    <!-- Portfolio item 5--7>
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Southwest</div>
-                            <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <!-- Portfolio item 6--7>
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Window</div>
-                            <div class="portfolio-caption-subheading text-muted">Photography</div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
+    </div>
 
-    </section>
-    <!-- Collaborators-->
-    <section class="page-section" id="collaborator">
+    <!-- people -->
+    <div id="services">
         <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">
-                    <span lang='sp'>Colaboradores</span>
-                    <span lang='eng'>Collaborators</span>
-                </h2>
-                <h3 class="section-subheading text-muted">
-                    <span lang='sp'>Proyectos de los pequeños grupos de desarrollo</span>
-                    <span lang='eng'>Small development team projects</span>
-                </h3>
+            <h1 class="sub-title">Team</h1>
+            <div class="services-list">
+                <div>
+                    <img src="assets/Index/Ro.png" alt="Rocio icon">
+                    <h2>Rocío Campo</h2>
+                    <h3>UI/UX Designer, Producer, Artist</h3>
+                    <a href="https://rox06io.github.io/" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <img src="assets/Index/Requena.png" alt="Alejandro icon">
+                    <h2>Alejandro Requena</h2>
+                    <h3>Unity Developer, VFX Developer</h3>
+                    <a href="https://linktr.ee/Requena21" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <img src="assets/Index/Tony.png" alt="Antonio icon">
+                    <h2>Antonio R. Ruano</h2>
+                    <h3>Programmer</h3>
+                    <a href="https://linktr.ee/blinx24" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <img src="assets/Index/Nacho.png" alt="Ignacio icon">
+                    <h2>Ignacio Calles</h2>
+                    <h3>Game Designer</h3>
+                    <a href="https://linktr.ee/Nachete07" target="_blank">Learn more</a>
+                </div>
             </div>
+        </div>
+    </div>
+
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
             <div class="row">
-                <!-- ReRoc Games -->
-                <h3 class="text-uppercase">
-                    <span lang='sp'>ReRoc Games</span>
-                    <span lang='eng'>ReRoc Games</span>
-                </h3>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- ReRoc Games -->
-                    <div class="collaborator-item">
-                        <a class="collaborator-link" data-bs-toggle="modal" href="#portfolioReRoc">
-                            <div class="collaborator-hover">
-                                <div class="collaborator-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/ReRocGames-01.jpg" alt="rerocGames" />
-                        </a>
-                        <div class="collaborator-caption">
-                            <div class="collaborator-caption-heading">
-                                <span lang='sp'>¿Quién somos?</span>
-                                <span lang='eng'>Who are we?</span>
-                            </div>
-                            <div class="collaborator-caption-subheading text-muted">
-                                ⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            </div>
-                        </div>
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact us</h1>
+                    <br>
+                    <h4><i>Is there anything else you need to know? We would be glad to hear from you</i></h4>
+                    <p><i class="fa-solid fa-envelope"></i>vrsdevs@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/vrsdevs/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://vrsdevs.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+                        <a href="https://twitter.com/VRSDevs" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/@vrsdevs" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Frikizz-->
-                    <div class="collaborator-item">
-                        <a class="collaborator-link" data-bs-toggle="modal" href="#RRGFirst">
-                            <div class="collaborator-hover">
-                                <div class="collaborator-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/frikizz-01.jpg" alt="frikizz" />
-                        </a>
-                        <div class="collaborator-caption">
-                            <div class="collaborator-caption-heading">
-                                <span lang='sp'>Frikizz</span>
-                                <span lang='eng'>Frikizz</span>
-                            </div>
-                            <div class="collaborator-caption-subheading text-muted">
-                                ⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Escape-->
-                    <div class="collaborator-item">
-                        <a class="collaborator-link" data-bs-toggle="modal" href="#RRGSec">
-                            <div class="collaborator-hover">
-                                <div class="collaborator-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Escape!-01.jpg" alt="escape!" />
-                        </a>
-                        <div class="collaborator-caption">
-                            <div class="collaborator-caption-heading">
-                                <span lang='sp'>Escape!</span>
-                                <span lang='eng'>Escape!</span>
-                            </div>
-                            <div class="collaborator-caption-subheading text-muted">
-                                ⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- MrWojack -->
-                <h3 class="text-uppercase">
-                    <span lang='sp'>MrWojack</span>
-                    <span lang='eng'>MrWojack</span>
-                </h3>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <!-- MrWojack-->
-                    <div class="collaborator-item">
-                        <a class="collaborator-link" data-bs-toggle="modal" href="#portfolioMrWojack">
-                            <div class="collaborator-hover">
-                                <div class="collaborator-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/MrWojack-01.jpg" alt="MrWojack" />
-                        </a>
-                        <div class="collaborator-caption">
-                            <div class="collaborator-caption-heading">
-                                <span lang='sp'>¿Quién somos?</span>
-                                <span lang='eng'>Who are we?</span>
-                            </div>
-                            <div class="collaborator-caption-subheading text-muted">
-                                ⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                    <!-- Gameopardy-->
-                    <div class="collaborator-item">
-                        <a class="collaborator-link" data-bs-toggle="modal" href="#MRJFirst">
-                            <div class="collaborator-hover">
-                                <div class="collaborator-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/gameopardy-01.jpg" alt="gameopardy" />
-                        </a>
-                        <div class="collaborator-caption">
-                            <div class="collaborator-caption-heading">
-                                <span lang='sp'>Gameopardy</span>
-                                <span lang='eng'>Gameopardy</span>
-                            </div>
-                            <div class="collaborator-caption-subheading text-muted">
-                                ⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            </div>
-                        </div>
-                    </div>
+
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/mayagwgq" method="POST">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="Name" placeholder="Your Name *" required />
+                        <label for="email-address">Email Address</label>
+                        <input type="email" name="Email" placeholder="Your Email *" required />
+                        <label for="message">Message</label>
+                        <textarea name="Message" rows="6" placeholder="Your Message *" required></textarea>
+
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
 
-    </section>
-    <!-- Team-->
-    <section class="page-section bg-light" id="team">
-        <div class="container-fluid">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">
-                    <span lang='sp'>Nuestro increible equipo</span>
-                    <span lang='eng'>Our amazing Team</span>
-                </h2>
-            </div>
-            <div id="carouselTeam" class="carousel slide" data-ride="carousel" data-interval="500">
-                <div class="carousel-inner row w-40 mx-auto" role="listbox">
-                    <!-- Rocio -->
-                    <div class="carousel-item col-4 col-sm-6 col-md-4 col-lg-3 active" data-slide-to="2">
-                        <div class="carousel-caption">
-                            <h3 class="section-heading text-uppercase">Rocío Campo</h3>
-                            <h4 class="section-subheading text-muted">
-                                <span lang='sp'><i>Artista y Productora</i></span>
-                                <span lang='eng'><i>Artist and Producer</i></span>
-                            </h4>
-                            <a class="btn btn-primary btn-xl text-uppercase" href="https://linktr.ee/rociiio_campo" target="_blank"><span lang='sp'>Saber más</span>
-                                <span lang='eng'>Read more</span></a>
-                        </div>
-                        <img src="assets/img/team/Ro.png" class="img-fluid mx-auto d-block" alt="Ro">
-                    </div>
-                    <!-- Requena  -->
-                    <div class="carousel-item col-4 col-sm-6 col-md-4 col-lg-3 ">
-                        <div class="carousel-caption">
-                            <h3 class="section-heading text-uppercase">Alejandro Requena</h3>
-                            <h4 class="section-subheading text-muted">
-                                <span lang='sp'><i>Programador</i></span>
-                                <span lang='eng'><i>Programmer</i></span>
-                            </h4>
-                            <a class="btn btn-primary btn-xl text-uppercase" href="https://linktr.ee/Requena21" target="_blank"><span lang='sp'>Saber
-                                    más</span> <span lang='eng'>Read more</span></a>
-                        </div>
-                        <img src="assets/img/team/Requena.png" class="img-fluid mx-auto d-block" alt="Requena">
-                    </div>
-                    <!-- Antonio -->
-                    <div class="carousel-item col-4 col-sm-6 col-md-4 col-lg-3">
-                        <div class="carousel-caption">
-                            <h3 class="section-heading text-uppercase">Antonio R. Ruano</h3>
-                            <h4 class="section-subheading text-muted">
-                                <span lang='sp'><i>Programador</i></span>
-                                <span lang='eng'><i>Programmer</i></span>
-                            </h4>
-                            <a class="btn btn-primary btn-xl text-uppercase" href="https://linktr.ee/blinx24" target="_blank"><span lang='sp'>Saber
-                                    más</span> <span lang='eng'>Read more</span></a>
-                        </div>
-                        <img src="assets/img/team/Tony.png" class="img-fluid mx-auto d-block" alt="Tony">
-                    </div>
-                    <!-- Alberto -->
-                    <div class="carousel-item col-4 col-sm-6 col-md-4 col-lg-3">
-                        <div class="carousel-caption">
-                            <h3 class="section-heading text-uppercase">Alberto Rodríguez</h3>
-                            <h4 class="section-subheading text-muted">
-                                <span lang='sp'><i>Programador</i></span>
-                                <span lang='eng'><i>Programmer</i></span>
-                            </h4>
-                            <a class="btn btn-primary btn-xl text-uppercase" href="https://linktr.ee/AlberVicky09" target="_blank"><span lang='sp'>Saber
-                                    más</span> <span lang='eng'>Read more</span></a>
-                        </div>
-                        <img src="assets/img/team/Alberto.png" class="img-fluid mx-auto d-block" alt="Alberto">
-                    </div>
-                    <!-- Pablo  -->
-                    <div class="carousel-item col-4 col-sm-6 col-md-4 col-lg-3">
-                        <div class="carousel-caption">
-                            <h3 class="section-heading text-uppercase">Pablo Romero</h3>
-                            <h4 class="section-subheading text-muted">
-                                <span lang='sp'><i>Programador</i></span>
-                                <span lang='eng'><i>Programmer</i></span>
-                            </h4>
-                            <a class="btn btn-primary btn-xl text-uppercase" href="https://linktr.ee/Kalomano" target="_blank"><span lang='sp'>Saber
-                                    más</span> <span lang='eng'>Read more</span></a>
-                        </div>
-                        <img src="assets/img/team/Pablo.png" class="img-fluid mx-auto d-block" alt="Pablo">
-                    </div>
-                    <!-- Nacho  -->
-                    <div class="carousel-item col-4 col-sm-6 col-md-4 col-lg-3">
-                        <div class="carousel-caption">
-                            <h3 class="section-heading text-uppercase">Ignacio Calles</h3>
-                            <h4 class="section-subheading text-muted">
-                                <span lang='sp'><i>Diseñador de niveles</i></span>
-                                <span lang='eng'><i>Level Designer</i></span>
-                            </h4>
-                            <a class="btn btn-primary btn-xl text-uppercase" href="https://linktr.ee/Nachete07" target="_blank"><span lang='sp'>Saber
-                                    más</span> <span lang='eng'>Read more</span></a>
-                        </div>
-                        <img src="assets/img/team/Nacho.png" class="img-fluid mx-auto d-block" alt="Nacho">
-                    </div>
-                    <!-- Felipe  -->
-                    <div class="carousel-item col-4 col-sm-6 col-md-4 col-lg-3">
-                        <div class="carousel-caption">
-                            <h3 class="section-heading text-uppercase">Felipe Bermejo</h3>
-                            <h4 class="section-subheading text-muted">
-                                <span lang='sp'><i>Diseñador de audio</i></span>
-                                <span lang='eng'><i>Audio Designer</i></span>
-                            </h4>
-                            <a class="btn btn-primary btn-xl text-uppercase" href="https://linktr.ee/FelipeBermejo" target="_blank"><span lang='sp'>Saber
-                                    más</span> <span lang='eng'>Read more</span></a>
-                        </div>
-                        <img src="assets/img/team/Felipe.png" class="img-fluid mx-auto d-block" alt="Felipe">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTeam" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselTeam" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-                <div class="d-flex justify-content-end text-opacity-25">
-                    <span lang='sp'><i>(Avatares creados gracias a @lullindo)</i></span>
-                    <span lang='eng'><i>(Avatars created thanks to @lullindo)</i> </span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Redes Sociales  -->
-    <section class="page-section" id="contactus">
-        <div class="container-fluid">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">
-                    <span lang='sp'>Nuestras redes sociales</span>
-                    <span lang='eng'>Our social media</span>
-                </h2>
-
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div>
-                            <a class="btn btn-light btn-social2 mx-4" href="https://twitter.com/VRSDevs" target="_blank"> <i class=" fab fa-twitter fa-2x "></i>
-
-                            </a>
-                            <a class="btn btn-light btn-social2 mx-4 " href="https://vrsdevs.itch.io/" target="_blank"><i class=" fab fa-itch-io fa-2x "></i>
-                            </a>
-                            <a class="btn btn-light btn-social2 mx-4 " href="https://www.youtube.com/channel/UC74hDE58Ns8Cb2Q5ln7Kz9Q" target="_blank"><i
-                                    class=" fab fa-youtube fa-2x "></i>
-                            </a>
-                            <a class="btn btn-light btn-social2 mx-4 " href="https://vm.tiktok.com/ZM89CY3eT" target="_blank"><i class=" fab fa-tiktok fa-2x "></i>
-                            </a>
-                            <a class="btn btn-light btn-social2 mx-4 " href="https://github.com/VRSDevs" target="_blank"><i class=" fab fa-github fa-2x "></i>
-                            </a>
-
-                            <a class="btn btn-light btn-social2 mx-4 " href="mailto:vrsdevs@gmail.com "><i
-                                    class="fas fa-envelope fa-2x "></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact-->
-    <section class="page-section" id="contact">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">
-                    <span lang='sp'>¡Contáctanos!</span>
-                    <span lang='eng'>Contact us!</span>
-                </h2>
-            </div>
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- * * SB Forms Contact Form * *-->
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- This form is pre-integrated with SB Forms.-->
-            <!-- To make this form functional, sign up at-->
-            <!-- https://startbootstrap.com/solution/contact-forms-->
-            <!-- to get an API token!-->
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="https://formspree.io/f/mayagwgq" method="POST">
-                <div class="row align-items-stretch mb-5">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <!-- Name input-->
-                            <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" name="name" />
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                        </div>
-                        <div class="form-group">
-                            <!-- Email address input-->
-                            <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" name="_replyto" />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group form-group-textarea mb-md-0">
-                            <!-- Message input-->
-                            <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required" name="message"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <!-- Submit Button-->
-                <div class="text-center">
-                    <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">
-                        <span lang='sp'>Enviar</span>
-                        <span lang='eng'>Send</span>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </section>
-    <!-- Footer-->
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">Copyright &copy; VRS 2021</div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/VRSDevs" target="_blank"><i
-                            class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://vrsdevs.itch.io/" target="_blank"><i
-                            class="fab fa-itch-io"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/channel/UC74hDE58Ns8Cb2Q5ln7Kz9Q" target="_blank"><i
-                            class="fab fa-youtube"></i></a>
-                    <a class="btn btn-dark btn-social mx-2 " href="https://vm.tiktok.com/ZM89CY3eT" target="_blank"><i
-                            class="fab fa-tiktok "></i>
-                    </a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://github.com/VRSDevs" target="_blank"><i
-                            class="fab fa-github"></i></a>
-
-                    <a class="btn btn-dark btn-social mx-2" href="mailto:vrsdevs@gmail.com"><i
-                            class="fas fa-envelope"></i></a>
-
-                </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3">Privacy Policy</a>
-                    <a class="link-dark text-decoration-none">Terms of Use</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Portfolio Modals-->
-    <!-- CURRENT PROJECT-->
-    <div class="portfolio-modal modal fade" id="portfolioCurrent" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">
-                                    <span lang='sp'>XO Rivals</span>
-                                    <span lang='eng'>XO Rivals</span>
-                                </h2>
-                                <p class="item-intro text-muted2">
-                                    <span lang='sp'>Multijugador <i>Unattended</i></span>
-                                    <span lang='eng'>Unattended Multiplayer</span>
-                                </p>
-                                <!-- Carousel -->
-                                <div id="carouselLC" class="carousel slide carousel-fade caro" data-bs-ride="carousel">
-
-                                    <!-- The slideshow/carousel -->
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="assets/img/portfolio/XORivals/banner.png" alt="pause" class="d-block w-100">
-                                        </div>
-                                        <div class="carousel-item col">
-                                            <img src="assets/img/portfolio/XORivals/MainMenu.png" alt="preview" class="d-block w-100">
-                                        </div>
-                                        <div class="carousel-item ">
-                                            <img src="assets/img/portfolio/XORivals/Plataformas.gif" alt="Intro" class="d-block w-100">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="assets/img/portfolio/XORivals/fantasmas.gif" alt="menu" class="d-block w-100">
-                                        </div>
-
-
-                                    </div>
-
-                                    <!-- Left and right controls/icons -->
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselLC" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon"></span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselLC" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon"></span>
-                                    </button>
-                                </div>
-                                <!-- -- -->
-
-                                <ul class="list-inline text-modal">
-                                    <li>
-                                        <strong>
-                                            <span lang='sp'>Sinopsis:</span>
-                                            <span lang='eng'>Synopsis:</span>
-                                        </strong>
-                                        <span lang='sp'><i>XO Rivals</i> es un juego para web basado en el tradicional
-                                            Tic Tac
-                                            Toe,
-                                            presentando la innovación de que,
-                                            para poder colocar ficha, se debe ganar un minijuego previamente
-                                            seleccionado.
-                                            Con esta idea se busca proporcionar un unattended multiplayer para que los
-                                            jugadores no tengan que prestar
-                                            atención constante a la conexión del enemigo.</span>
-                                        <span lang='eng'><i>XO Rivals</i> is a web browser videogame based on the
-                                            traditional
-                                            Tic-Tac-Toe game. The main innovation to the formula
-                                            is that to mark one of the spaces, the player will have to win on a minigame
-                                            that will be selected previously.
-                                            With this idea we look to produce an unattended multiplayer style so that
-                                            the players do not have to pay constant attention
-                                            to the game and the rival. </span>
-                                        <div class="col-md-12">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="far fa-window-minimize"></i>
-                                            </span>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <strong>
-                                            <span lang='sp'>Objetivo:</span>
-                                            <span lang='eng'>Objetive:</span>
-                                        </strong>
-                                        <span lang='sp'>El objetivo final del juego será conseguir ser el primero en
-                                            terminar el tres en raya. Para ello, como ya se ha mencionado anteriormente,
-                                            será necesario completar correctamente los minijuegos que aparezcan antes de
-                                            colocar la ficha, eligiendo el que beneficie al jugador, o incluso, intentar
-                                            hacer que el rival no pueda colocar su ficha eligiendo un minijuego
-                                            difícil.</span>
-                                        <span lang='eng'>The final objective will be to mark three spaces in a row
-                                            before the rival does. To do this, like it was mentioned before, the players
-                                            will have to
-                                            complete the minigames correctly before marking the space. The participants
-                                            can choose the one that benefits themselves the most or even try to
-                                            choose a difficult so that the rival player cannot mark their space.</span>
-                                    </li>
-                                </ul>
-                                <h2 class="text-uppercase">
-                                    <span lang='sp'>El juego ya está disponible</span>
-                                    <span lang='eng'>Available game</span> ⠀
-                                </h2>
-                                <div>
-                                    <h4>
-                                        <span lang='sp'>Echa un vistazo al proyecto en la página web o en el itch.io</span>
-                                        <span lang='eng'>Take a look to the project here or on our itch.io</span>
-                                    </h4>
-                                    <div>
-                                        <iframe frameborder="0" src="https://itch.io/embed-upload/4788238?color=1b508b" allowfullscreen="" width="640" height="380"><a href="https://vrsdevs.itch.io/xo-rivals">Play XO Rivals on
-                                                itch.io</a></iframe>
-                                    </div>
-                                    <button class="btn">
-                                        <a class="text-center" href="https://vrsdevs.itch.io/xo-rivals" target="_blank">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                                <i class="fab fa-itch-io fa-stack-1x fa-inverse"></i>
-                                            </span>⠀
-                                        </a>
-                                    </button>
-                                </div>
-
-                                <!-- <h2 class="text-uppercase"> ⠀
-                                    <strong>
-                                        <span lang='sp'>Juega aquí:</span>
-                                        <span lang='eng'>Play here:</span>
-                                    </strong>
-                                    <button class="btn">
-                                        <a href="https://vrsdevs.itch.io/xo-rivals" target="_blank">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="fas fa-play-circle"></i>
-                                            </span>⠀
-                                        </a>
-                                    </button>⠀⠀⠀
-                                </h2> -->
-                                <button class="btn btn-primary btn-xl text-uppercase text " data-bs-dismiss="modal" type="button">
-                                    <i class="fas fa-times me-1"></i>
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </div>
+    <div class="copyright">
+        <p>© Virtual Ravens Games 2023</p>
+        <div class="social">
+            <a href="https://www.linkedin.com/company/vrsdevs/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://vrsdevs.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+            <a href="https://twitter.com/VRSDevs" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@vrsdevs" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="mailto:vrsdevs@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </div>
-    <!-- LAST PROJECT-->
-    <div class="portfolio-modal modal fade" id="portfolioLast" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">
-                                    <span lang='sp'>Looping Crystal</span>
-                                    <span lang='eng'>Looping Crystal</span>
-                                </h2>
-                                <p class="item-intro text-muted2">
-                                    <span lang='sp'>Juego de plataformas</span>
-                                    <span lang='eng'>Platform game</span>
-                                </p>
-                                <!-- Carousel -->
-                                <div id="carouselLC" class="carousel slide carousel-fade caro" data-bs-ride="carousel">
 
-                                    <!-- The slideshow/carousel -->
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item col">
-                                            <img src="assets/img/portfolio/LoopingCrystal/preview.png" alt="preview" class="d-block w-100">
-                                        </div>
-                                        <div class="carousel-item active">
-                                            <img src="assets/img/portfolio/LoopingCrystal/intro.png" alt="Intro" class="d-block w-100">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="assets/img/portfolio/LoopingCrystal/menu.png" alt="menu" class="d-block w-100">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="assets/img/portfolio/LoopingCrystal/Pause.png" alt="pause" class="d-block w-100">
-                                        </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        var unactiveWorks = document.getElementsByClassName("unactive")
+        var btn = document.getElementById("read")
+        var isClicked = true;
 
-                                    </div>
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
 
-                                    <!-- Left and right controls/icons -->
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselLC" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon"></span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselLC" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon"></span>
-                                    </button>
-                                </div>
-                                <!-- -- -->
-                                <ul class="list-inline text text-modal">
-                                    <li>
-                                        <strong>
-                                            <span lang='sp'>Sinopsis:</span>
-                                            <span lang='eng'>Synopsis:</span>
-                                        </strong>
-                                        <span lang='sp'>Nea es una joven exploradora que decidió entrar en una cueva sin
-                                            saber los misterios que se escondían dentro de ella.
-                                            Gracias a la magia que hay en la cueva, deberás sacar a Nea de allí y
-                                            resolver
-                                            el misterio.
-                                        </span>
-                                        <span lang='eng'>Nea, a young explorer goes into a mysterious cave, without
-                                            knowing
-                                            what mysteries are
-                                            hidden in it. Due to a magic coming from the cave , you must help to get out
-                                            of
-                                            there and solve the mystery.</span>
-                                        <div class="col-md-12">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="far fa-window-minimize"></i>
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <strong>
-                                            <span lang='sp'>Objetivo:</span>
-                                            <span lang='eng'>Objetive:</span>
-                                        </strong>
-                                        <span lang='sp'>El objetivo será ayudar a Nea a salir de la cueva desbloqueando
-                                            las distintas mecánicas del juego. Además, hay 4 coleccionables
-                                            que puedes conseguir jugando.
-                                        </span>
-                                        <span lang='eng'>Your objective is helping Nea to find a way out from the creepy
-                                            cave by unlocking some mechanics during the gameplay.
-                                            Moreover, there are 4 collectionables that you can pick them up.</span>
-                                    </li>
-                                </ul>
-                                <h2 class="text-uppercase"> ⠀
-                                    <strong>
-                                        <span lang='sp'>Juega aquí:</span>
-                                        <span lang='eng'>Play here:</span>
-                                    </strong>⠀⠀⠀
-                                    <button class="btn">
-                                        <a href="https://blinx24.itch.io/looping-crystal" target="_blank">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="fas fa-play-circle text-primary"></i>
+        function openWork(workname) {
+            if (isClicked) {
+                for (unactiveWork of unactiveWorks) {
+                    unactiveWork.classList.remove("unactive");
 
-                                            </span>⠀
-                                        </a>
-                                    </button>
-                                </h2>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <i class="fas fa-times me-1"></i>
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- PROJECT 1-->
-    <div class="portfolio-modal modal fade" id="portfolioOne" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">
-                                    <span lang='sp'>Origins</span>
-                                    <span lang='eng'>Origins</span>
-                                </h2>
-                                <p class="item-intro text-muted2">
-                                    <span lang='sp'>Atrapa la bandera</span>
-                                    <span lang='eng'>Capture the flag</span>
-                                </p>
-                                <!-- Carousel -->
-                                <div id="carouselOG" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                }
+                isClicked = false;
+                btn.innerHTML = "Hide all"
+            } else {
+                document.getElementById(workname).classList.add("unactive");
+                isClicked = true;
+                btn.innerHTML = "See more"
+            }
 
-                                    <!-- The slideshow/carousel -->
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item">
-                                            <img src="assets/img/portfolio/Origins/characters.png" alt="character" class="d-block w-100">
-                                        </div>
-                                        <div class="carousel-item active">
-                                            <img src="assets/img/portfolio/Origins/game.png" alt="game" class="d-block w-100">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="assets/img/portfolio/Origins/menuppal.png" alt="menu" class="d-block w-100">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="assets/img/portfolio/Origins/modes.png" alt="modes" class="d-block w-100">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="assets/img/portfolio/Origins/salas.png" alt="salas" class="d-block w-100">
-                                        </div>
-                                    </div>
-                                    <!-- Left and right controls/icons -->
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselOG" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon"></span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselOG" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon"></span>
-                                    </button>
-                                </div>
-                                <!-- -- -->
-                                <ul class="list-inline text-modal">
-                                    <li>
-                                        <strong>
-                                            <span lang='sp'>Sinopsis:</span>
-                                            <span lang='eng'>Synopsis:</span>
-                                        </strong>
-                                        <span lang='sp'><i>Origins</i> es un videojuego para PC donde se controla a uno
-                                            de los elementos de la naturaleza con la
-                                            finalidad de poseer la materia oscura, ya sea a través de una simple
-                                            búsqueda o
-                                            robándosela a los otros jugadores.
-                                        </span>
-                                        <span lang='eng'><i>Origins</i> is a PC game where you have to control one of
-                                            Nature Elements who need the energy of a materia call <i>dark matter</i>.
-                                            You can catch it or you can steal from other players. </span>
-                                        <div class="col-md-12">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="far fa-window-minimize"></i>
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <strong>
-                                            <span lang='sp'>Objetivo:</span>
-                                            <span lang='eng'>Objetive:</span>
-                                        </strong>
-                                        <span lang='sp'>El objetivo del juego es conseguir la mayor cantidad de materia
-                                            oscura posible, para ello,
-                                            aparecerá la puntuación que la materia oscura cederá al jugador por
-                                            poseerla.
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
 
-                                        </span>
-                                        <span lang='eng'>The main objective is to get the dark matter as long as
-                                            possible to win a higher score than your enemys </span>
-                                    </li>
-                                </ul>
-                                <h2 class="text-uppercase"> ⠀
-                                    <strong>
-                                        <span lang='sp'>Juega aquí:</span>
-                                        <span lang='eng'>Play here:</span>
-                                    </strong>⠀⠀⠀
-                                    <button class="btn">
-                                        <a href="https://vrsdevs.itch.io/origins" target="_blank">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="fas fa-play-circle text-primary"></i>
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
 
-                                            </span>⠀
-                                        </a>
-                                    </button>
-                                </h2>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <i class="fas fa-times me-1"></i>
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ReRoc-->
-    <div class="collaborator-modal modal fade" id="portfolioReRoc" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">
-                                    <span lang='sp'>ReRoc Games</span>
-                                    <span lang='eng'>ReRoc Games</span>
-                                </h2>
-
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/RerocGames/Banner.jpg" alt="Reroc banner" />
-
-                                <p class="text-modal">
-                                    <span lang='sp'>Somos dos desarrolladores de videojuegos especializados en el
-                                        desarrollo de aplicaciones móviles y de videojuegos en Realidad Virtual.
-                                        Hemos surgido recientemente con la aplicación de <i>Frikizz</i>, así que todavia
-                                        tenemos mucho futuro por delante. Asociados a Virtual Ravens Games.</span>
-                                    <span lang='eng'>We are two game developers specialized in app development and
-                                        Virtual Reality games. We are a new group so we have a long way ahead, besides
-                                        our first
-                                        project was <i>Frikizz</i>. Working with Virtual Ravens Games </span>
-                                </p>
-                                <div>
-                                    <h2 class="text-uppercase"> ⠀
-                                        <strong>
-                                            <span lang='sp'>Redes Sociales</span>
-                                            <span lang='eng'>Social Media</span>
-                                        </strong>
-                                    </h2>
-                                    <button class="btn col-lg-6">
-                                        <a href="https://twitter.com/ReRoc_Games" target="_blank">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                            </span>⠀
-                                        </a>
-                                        <a href="https://www.youtube.com/channel/UCe_WALkvXJ7XZl066cx35UA"
-                                            target="_blank">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
-                                            </span>⠀
-                                        </a>
-                                    </button>⠀⠀⠀
-
-                                </div>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <i class="fas fa-times me-1"></i>
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ReRoc Project 1 -->
-    <div class="portfolio-modal modal fade" id="RRGFirst" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">Frikizz</h2>
-                                <p class="item-intro text-muted2">
-                                    <span lang='sp'>Aplicación de preguntas</span>
-                                    <span lang='eng'>Quiz app</span>
-                                </p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/RerocGames/Imagen1.png" alt="mockup" />
-                                <h2 class="text-uppercase">
-                                    <span lang='sp'>Desarrollando...</span>
-                                    <span lang='eng'>Developing...</span>
-                                </h2>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <i class="fas fa-times me-1"></i>
-                                    Close Project
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ReRoc Project 2-->
-    <div class="portfolio-modal modal fade" id="RRGSec" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">Escape!</h2>
-                                <p class="item-intro text-muted2">
-                                    <span lang='sp'>Escape Room de terror para cardboard</span>
-                                    <span lang='eng'>Cardboard's Terror Scape Room</span>
-                                </p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/RerocGames/PORTADA.jpg" alt="portada" />
-                                <h2 class="text-uppercase"> ⠀
-                                    <strong>
-                                        <span lang='sp'>Juega aquí:</span>
-                                        <span lang='eng'>Play here:</span>
-                                    </strong>⠀⠀⠀
-                                    <button class="btn">
-                                        <a href="https://rox06io.itch.io/escape" target="_blank">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="fas fa-play-circle text-primary"></i>
-
-                                            </span>⠀
-                                        </a>
-                                    </button>
-                                    <strong>
-                                        <span lang='sp'>Descargalo aquí:</span>
-                                        <span lang='eng'>Download here:</span>
-                                    </strong>⠀⠀⠀
-                                    <button class="btn">
-                                        <a href="https://play.google.com/store/apps/details?id=com.ReRocGames.Escape&hl=es&gl=US" target="_blank">
-                                            <span class="fa-stack fa-4x">
-                                                <i class="fas fa-play-circle text-primary"></i>
-                                            </span>⠀
-                                        </a>
-                                    </button>
-                                </h2>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-times me-1"></i>
-                                        Close Project
-                                    </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- MrWojack -->
-    <div class="collaborator-modal modal fade" id="portfolioMrWojack" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">
-                                    <span lang='sp'>MrWojack</span>
-                                    <span lang='eng'>MrWojack</span>
-                                </h2>
-
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/MrWojack-01.jpg" alt="MrWojack banner" />
-
-                                <p class="text-modal">
-                                    <span lang='sp'>Pequeño estudio de desarrollo de aplicaciones moviles asociado al
-                                        equipo de Virtual Ravens Games.</span>
-                                    <span lang='eng'>Small apps development team asociated with Virtual Ravens Games
-                                    </span>
-                                </p>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <i class="fas fa-times me-1"></i>
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- MrWojack Project 1 -->
-    <div class="portfolio-modal modal fade" id="MRJFirst" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">Gameopardy</h2>
-                                <p class="item-intro text-muted2">
-                                    <span lang='sp'>Aplicación de preguntas</span>
-                                    <span lang='eng'>Quiz app</span>
-                                </p>
-                                <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/RerocGames/Imagen1.png"
-                                    alt="mockup" />
-                                <h2 class="text-uppercase">
-                                    <span lang='sp'>Desarrollando...</span>
-                                    <span lang='eng'>Developing...</span>
-                                </h2>
-                                -->
-                                <h3 class="text-uppercase">
-                                    <span lang='sp'>Desarrollando...</span>
-                                    <span lang='eng'>Developing...</span>
-                                </h3>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <i class="fas fa-times me-1"></i>
-                                    Close Project
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        function openMenu() {
+            sidemenu.style.right = "0";
+        }
+    </script>
 </body>
 
 </html>
